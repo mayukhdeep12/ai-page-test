@@ -33,7 +33,7 @@ function Footer() {
           <p>
             
             <br />
-            Built without ❤️ at Cryenx Labs
+            Built with ❤️ at Cryenx Labs
             {/* <a
               href="https://github.com/vsbron/react2024-brainwave"
               className="text-n-2 hover:text-n-1 transition-colors"
