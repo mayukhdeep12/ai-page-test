@@ -45,6 +45,14 @@ import slack from "./collaboration/slack.png";
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
+import service4 from "./services/service-4.png";
+import service5 from "./services/service-5.jpg";
+import service from "./services/service.webp";
+import aiw from "./services/aiw.png";
+import caim from "./services/caim.webp";
+
+
+
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -127,6 +135,11 @@ lego,
   service1,
   service2,
   service3,
+  service4,
+service5,
+service,
+aiw,
+caim,
   lines,
   stars,
   coins,

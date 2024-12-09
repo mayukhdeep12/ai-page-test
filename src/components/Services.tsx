@@ -4,7 +4,11 @@ import Section from "./Section";
 import Generating from "../ui/Generating";
 import Heading from "../ui/Heading";
 
-import { service1, service2, service3, check } from "../assets";
+import { service1, service2, service3, check, service4,
+  service5,
+  service,
+  aiw,
+  caim } from "../assets";
 import {
   PhotoChatMessage,
   Gradient,
@@ -81,7 +85,7 @@ function Services() {
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden services-element">
               <div className="absolute inset-0">
                 <img
-                  src="../src/assets/services/service.webp"
+                  src={service}
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
@@ -123,7 +127,7 @@ function Services() {
               </div>
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src="../src/assets/services/caim.webp"
+                  src={caim}
                   className="w-full h-full object-cover"
                   width={512}
                   height={400}
@@ -158,7 +162,7 @@ function Services() {
               </div>
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src="../src/assets/services/service-5.jpg"
+                  src={service5}
                   className="w-full h-full object-cover"
                   width={512}
                   height={400}
@@ -173,7 +177,7 @@ function Services() {
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden services-element">
               <div className="absolute inset-0">
                 <img
-                  src="src\assets\services\service-4.png"
+                  src={service4}
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
@@ -233,7 +237,7 @@ function Services() {
               </div>
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src="../src/assets/services/aiw.png"
+                  src={aiw}
                   className="w-full h-full object-cover"
                   width={512}
                   height={400}
