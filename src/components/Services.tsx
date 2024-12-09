@@ -41,7 +41,7 @@ function Services() {
         <div className="services-title">
           <Heading
             title="Solutions"
-            text="Cryenx unlocks the potential of AI-powered applications"
+            text=""
           />
         </div>
         <div className="relative">
@@ -57,10 +57,10 @@ function Services() {
               />
             </div>
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
-              <p className="body-2 mb-[3rem] text-n-3">
+              <h4 className="h4 mb-4">Services We Provide</h4>
+              {/* <p className="body-2 mb-[3rem] text-n-3">
                 Cryenx unlocks the potential of AI-powered applications
-              </p>
+              </p> */}
               <ul className="body-2">
                 {brainwaveServices.map((item, i) => (
                   <li
@@ -81,7 +81,7 @@ function Services() {
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden services-element">
               <div className="absolute inset-0">
                 <img
-                  src={service2}
+                  src="src\assets\services\service.webp"
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
@@ -123,21 +123,21 @@ function Services() {
               </div>
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src={service3}
+                  src="src\assets\services\caim.webp"
                   className="w-full h-full object-cover"
                   width={512}
                   height={400}
                   alt="Scary robot"
                 />
-                <VideoChatMessage />
-                <VideoBar />
+                {/* <VideoChatMessage /> */}
+                {/* <VideoBar /> */}
               </div>
             </div>
 
             {/* Service 4 */}
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem] services-element">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">AI Tools Enterprise Deployment</h4>
+                <h4 className="h4 mb-4">AI Enterprise Deployment</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
                 Our deployment services focus on scalability, allowing enterprises to handle increasing workloads without compromising performance. We ensure that the AI tools are optimized for your specific business needs.
                 </p>
@@ -158,14 +158,14 @@ function Services() {
               </div>
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src={service3}
+                  src="src\assets\services\service-5.jpg"
                   className="w-full h-full object-cover"
                   width={512}
                   height={400}
                   alt="Scary robot"
                 />
-                <VideoChatMessage />
-                <VideoBar />
+                {/* <VideoChatMessage /> */}
+                {/* <VideoBar /> */}
               </div>
             </div>
 
@@ -173,7 +173,7 @@ function Services() {
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden services-element">
               <div className="absolute inset-0">
                 <img
-                  src={service2}
+                  src="src\assets\services\service-4.png"
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
@@ -186,7 +186,7 @@ function Services() {
                 Our chatbots are designed to be versatile and can be customized for various industries and purposes. Whether you need a chatbot for e-commerce, healthcare, or education, we can tailor it to fit your specific needs.
                 </p>
               </div>
-              <PhotoChatMessage />
+              {/* <PhotoChatMessage /> */}
             </div>
 
               {/* Service 6 */}
@@ -206,7 +206,7 @@ function Services() {
                 Our approach is highly customizable, allowing us to develop pipelines that align perfectly with your business objectives and workflows. Whether you're in gaming, finance, or another industry, we can create tailored AI solutions to boost your operations.
                 </p>
               </div>
-              <PhotoChatMessage />
+              {/* <PhotoChatMessage /> */}
             </div>
 
             {/* Service 7 */}
@@ -233,14 +233,14 @@ function Services() {
               </div>
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src={service3}
+                  src="src\assets\services\aiw.png"
                   className="w-full h-full object-cover"
                   width={512}
                   height={400}
                   alt="Scary robot"
                 />
-                <VideoChatMessage />
-                <VideoBar />
+                {/* <VideoChatMessage /> */}
+                {/* <VideoBar /> */}
               </div>
             </div>
 

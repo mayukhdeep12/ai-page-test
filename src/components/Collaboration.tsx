@@ -65,16 +65,16 @@ function Collaboration() {
           <div className="collaboration-title">
             <Heading
               className="h2 mb-4 md:mb-8 md:!text-left"
-              title="Where Every Interaction Sparks Curiosity"
+              title="About Us"
             ></Heading>
           </div>
           <ul className="max-w-[22rem] mb-8 lg:mb-14">
             {collabContent.map((item) => (
               <li key={item.id} className="mb-3 py-3">
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <img src={check} width={24} height={24} alt="Check" />
                   <h6 className="body-2 ml-5">{item.title}</h6>
-                </div>
+                </div> */}
                 {item.text && (
                   <p className="body-2 mt-3 text-n-4">{item.text}</p>
                 )}
@@ -82,14 +82,14 @@ function Collaboration() {
             ))}
           </ul>
           <div className="button-animated inline-block">
-            <Button href="#pricing">Try it now</Button>
+            <Button href="https://www.cryenx.com/">Let's Connect</Button>
           </div>
         </div>
         {/* Apps circle */}
         <div className="mt-16 lg:ml-auto xl:w-[38rem] lg:mt-4">
-          <p className="body-2 mb-4 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
+          {/* <p className="body-2 mb-4 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
             {collabText}
-          </p>
+          </p> */}
           <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
             <MouseParallax strength={0.025} isAbsolutelyPositioned>
               <div className="flex w-60 aspect-square border border-n-6 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 collaboration-brainwave">
@@ -130,7 +130,7 @@ function Collaboration() {
               </ul>
             </MouseParallax>
 
-            <LeftCurve />
+            {/* <LeftCurve /> */}
             <RightCurve />
           </div>
         </div>

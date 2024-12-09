@@ -4,6 +4,9 @@ import {
   benefitIcon3,
   benefitIcon4,
   benefitImage2,
+  benefitImage3,
+  benefitImage4,
+
   chromecast,
   disc02,
   discord,
@@ -33,21 +36,26 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
+  loreal,
+  cola,
+  disney,
+  sxsw,
+  lego,
 } from "../assets";
 
 export const navigation = [
+  {
+    id: "1",
+    title: "Solutions",
+    url: "#how-to-use",
+  },
   {
     id: "3",
     title: "Process",
     url: "#roadmap",
   },
  
-  {
-    id: "1",
-    title: "Solutions",
-    url: "#how-to-use",
-  },
+ 
   {
     id: "0",
     title: "Projects",
@@ -77,7 +85,11 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [loreal,
+  cola,
+  disney,
+  sxsw,
+  lego];
 
 export const brainwaveServices = [
   "Comfy UI Workflows",
@@ -133,22 +145,22 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "At Cryenx Labs, we revolutionize businesses with cutting-edge AI solutions tailored for the future. From custom chatbots to seamless UI workflows, our innovative tools empower you to elevate operations and engage customers like never before. Let us help you unlock the full potential of AI and transform your vision into reality!";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "WE",
     text: collabText,
   },
-  {
-    id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
-  },
+  // {
+  //   id: "1",
+  //   title: "Smart Automation",
+  // },
+  // {
+  //   id: "2",
+  //   title: "Top-notch Security",
+  // },
 ];
 
 export const collabApps = [
@@ -156,29 +168,29 @@ export const collabApps = [
     id: "0",
     title: "Figma",
     icon: figma,
-    width: 26,
-    height: 36,
+    width: 34,
+    height: 34,
   },
   {
     id: "1",
     title: "Notion",
     icon: notion,
     width: 34,
-    height: 36,
+    height: 34,
   },
   {
     id: "2",
     title: "Discord",
     icon: discord,
-    width: 36,
-    height: 28,
+    width: 34,
+    height: 34,
   },
   {
     id: "3",
     title: "Slack",
     icon: slack,
     width: 34,
-    height: 35,
+    height: 34,
   },
   {
     id: "4",
@@ -198,15 +210,15 @@ export const collabApps = [
     id: "6",
     title: "Framer",
     icon: framer,
-    width: 26,
+    width: 34,
     height: 34,
   },
   {
     id: "7",
     title: "Raindrop",
     icon: raindrop,
-    width: 38,
-    height: 32,
+    width: 34,
+    height: 34,
   },
 ];
 
@@ -261,7 +273,7 @@ export const benefits = [
     text: "We've developed a cutting-edge AI vision system that revolutionizes nail diagnostics through precise marker-based measurement technologies.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    imageUrl: benefitImage3,
     light: true,
   },
   {
@@ -270,7 +282,7 @@ export const benefits = [
     text: "We architect complete AI solution ecosystems. By understanding your unique business requirements, we design and implement pre-configured workflows that leverage top-tier market solutions.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    imageUrl: benefitImage4,
   },
   // {
   //   id: "3",

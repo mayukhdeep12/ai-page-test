@@ -21,7 +21,7 @@ function CompanyLogos({ className }: CompanyLogosProps) {
   return (
     <div className={className}>
       <h5 className="tagline mb-6 text-center text-n-1/50">
-        Helping people create beautiful content at
+      Empowering Brands to Craft Stunning Content
       </h5>
       <ul className="flex">
         {companyLogos.map((logo, i) => (

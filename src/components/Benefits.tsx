@@ -41,56 +41,72 @@ function Benefits() {
           />
         </div>
         <div className="flex flex-wrap gap-10 mb-10">
-          {benefits.map((item) => (
-            <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[25rem] opacity-100 benefits-element group"
-              style={{ backgroundImage: `url(${item.backgroundUrl})` }}
-              key={item.id}
-            >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem]">
-                <h5 className="h5 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="flex items-center mt-auto">
-                  <img
-                    src={item.iconUrl}
-                    width={48}
-                    height={48}
-                    alt={item.title}
-                  />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                    <a
-                      className="hover:text-n-3 transition-colors"
-                      href="#features"
-                    >
-                      Try it out
-                    </a>
-                  </p>
-                  <Arrow />
-                </div>
-              </div>
-              {/* Additional lighting effect for some benefit items */}
-              {item.light && <GradientLight />}
+          {benefits.map((item, index) => {
+            let link = "";
+            let linkText = "Try it out";
+            let disabled = false;
 
+            if (index === 0) {
+              link = "https://batra-product-usecase.d3nc59xvwgw4bm.amplifyapp.com/";
+            } else if (index === 1) {
+              link = "https://cnvs-do-frontend.d3uj99dg1dxj4v.amplifyapp.com/";
+            } else if (index === 2) {
+              linkText = "Coming soon";
+              disabled = true;
+            }
+
+            return (
               <div
-                className="absolute inset-0.5 bg-n-8"
-                style={{ clipPath: "url(#benefits)" }}
+                className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[25rem] opacity-100 benefits-element group"
+                style={{ backgroundImage: `url(${item.backgroundUrl})` }}
+                key={item.id}
               >
-                <div className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-10">
-                  {item.imageUrl && (
+                <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem]">
+                  <h5 className="h5 mb-5">{item.title}</h5>
+                  <p className="body-2 mb-6 text-n-3">{item.text}</p>
+                  <div className="flex items-center mt-auto">
                     <img
-                      src={item.imageUrl}
-                      width={380}
-                      height={362}
+                      src={item.iconUrl}
+                      width={48}
+                      height={48}
                       alt={item.title}
-                      className="w-full h-full object-cover"
                     />
-                  )}
+                    <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+                      <a
+                        className={`hover:text-n-3 transition-colors ${disabled ? 'cursor-not-allowed' : ''}`}
+                        href={disabled ? '#' : link}
+                        onClick={(e) => disabled && e.preventDefault()}
+                      >
+                        {linkText}
+                      </a>
+                    </p>
+                    <Arrow />
+                  </div>
                 </div>
+                {/* Additional lighting effect for some benefit items */}
+                {item.light && <GradientLight />}
+
+                <div
+                  className="absolute inset-0.5 bg-n-8"
+                  style={{ clipPath: "url(#benefits)" }}
+                >
+                  <div className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-10">
+                    {item.imageUrl && (
+                      <img
+                        src={item.imageUrl}
+                        width={380}
+                        height={362}
+                        alt={item.title}
+                        className="w-full h-full object-cover"
+                      />
+                    )}
+                  </div>
+                </div>
+                {/* The path, the div with clipPath style linked to */}
+                <ClipPath />
               </div>
-              {/* The path, the div with clipPath style linked to */}
-              <ClipPath />
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </Section>
