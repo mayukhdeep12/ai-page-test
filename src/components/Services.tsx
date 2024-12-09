@@ -81,7 +81,7 @@ function Services() {
             <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden services-element">
               <div className="absolute inset-0">
                 <img
-                  src="src\assets\services\service.webp"
+                  src="../src/assets/services/service.webp"
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
@@ -123,7 +123,7 @@ function Services() {
               </div>
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src="src\assets\services\caim.webp"
+                  src="../src/assets/services/caim.webp"
                   className="w-full h-full object-cover"
                   width={512}
                   height={400}
@@ -158,7 +158,7 @@ function Services() {
               </div>
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src="src\assets\services\service-5.jpg"
+                  src="../src/assets/services/service-5.jpg"
                   className="w-full h-full object-cover"
                   width={512}
                   height={400}
@@ -233,7 +233,7 @@ function Services() {
               </div>
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
-                  src="src\assets\services\aiw.png"
+                  src="../src/assets/services/aiw.png"
                   className="w-full h-full object-cover"
                   width={512}
                   height={400}
