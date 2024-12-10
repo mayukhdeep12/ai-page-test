@@ -158,6 +158,7 @@ function Roadmap() {
                     <Tagline>{item.date}</Tagline>
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
+                  <h6 className="h6 mb-4">{item.text1}</h6>
                   <p className="body-2 text-n-4 mb-4">{item.text}</p>
                   {/* <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
                     <img
