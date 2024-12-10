@@ -35,7 +35,7 @@ function Header() {
       className={`fixed top-0 l-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <a className="block w-[12rem] xl:mr-8" href="https://www.cryenx.com/">
           <img src={cryenx} width={190} height={40} alt="Cryenx Labs" />
         </a>
         <nav
@@ -55,12 +55,12 @@ function Header() {
           </div>
           <HamburgerMenu />
         </nav>
-        <a
+        {/* <a
           href="https://www.cryenx.com/"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           Cryenx Labs
-        </a>
+        </a> */}
         <Button className="hidden lg:flex" href="https://www.cryenx.com/contact">
           Contact us
         </Button>

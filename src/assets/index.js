@@ -28,7 +28,7 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/fox.jpg";
+import robot from "./hero/fox.gif";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-2.svg";
@@ -64,6 +64,12 @@ import roadmap1 from "./roadmap/image-1.png";
 import roadmap2 from "./roadmap/image-2.png";
 import roadmap3 from "./roadmap/image-3.png";
 import roadmap4 from "./roadmap/image-4.png";
+import roadmap5 from "./roadmap/image-5.png";
+import roadmap6 from "./roadmap/image-6.png";
+import roadmap7 from "./roadmap/image-7.png";
+
+
+
 import undone from "./roadmap/undone.svg";
 
 import notification1 from "./notification/image-1.jpg";
@@ -149,6 +155,9 @@ caim,
   roadmap2,
   roadmap3,
   roadmap4,
+  roadmap5,
+  roadmap6,
+  roadmap7,
   undone,
   notification1,
   notification2,

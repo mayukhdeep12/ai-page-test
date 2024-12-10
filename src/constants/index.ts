@@ -31,6 +31,9 @@ import {
   roadmap2,
   roadmap3,
   roadmap4,
+  roadmap5,
+  roadmap6,
+  roadmap7,
   searchMd,
   slack,
   sliders04,
@@ -45,27 +48,28 @@ import {
 
 export const navigation = [
   {
+    id: "2",
+    title: "About",
+    url: "#about",
+  },
+  {
     id: "1",
     title: "Solutions",
-    url: "#how-to-use",
+    url: "#solutions",
   },
   {
     id: "3",
     title: "Process",
-    url: "#roadmap",
+    url: "#process",
   },
  
  
   {
     id: "0",
     title: "Projects",
-    url: "#features",
+    url: "#projects",
   },
-  // {
-  //   id: "2",
-  //   title: "Pricing",
-  //   url: "#pricing",
-  // },
+
  
   // {
   //   id: "4",
@@ -113,7 +117,7 @@ export const roadmap = [
     id: "0",
     title: "Discovery Stage",
     text: "Understand your challenges and define a clear direction for your solution.",
-    text1: "30% improvement in project alignment",
+    text1: "30% increase in project alignment with business goals, enhancing ROI by reducing misaligned efforts.",
     date: "Step 1",
     status: "done",
     imageUrl: roadmap1,
@@ -123,7 +127,7 @@ export const roadmap = [
     id: "1",
     title: "Requirement Analysis",
     text: "Identify specific pain points and customize solutions to address them.",
-    text1: "50% boost in customer satisfaction",
+    text1: "Tailored chatbots improve customer satisfaction by 50%",
     date: "Step 2",
     status: "done",
     imageUrl: roadmap2,
@@ -132,7 +136,7 @@ export const roadmap = [
     id: "2",
     title: "Process Strategization",
     text: "Develop a clear roadmap that ensures alignment and collaboration between teams.",
-    text1: "40% reduction in training costs",
+    text1: "40% reduction in training costs, boosting ROI by accelerating employee productivity.",
     date: "Step 3",
     status: "in progress",
     imageUrl: roadmap3,
@@ -141,7 +145,7 @@ export const roadmap = [
     id: "3",
     title: "Technology Identification",
     text: "Select the best technologies for seamless integration and scalability.",
-    text1: "25% increase in operational efficiency",
+    text1: "Advanced AI tools enhance operational efficiency by 25%",
     date: "Step 4",
     status: "in progress",
     imageUrl: roadmap4,
@@ -150,28 +154,28 @@ export const roadmap = [
     id: "4",
     title: "QA & Compliance Testing",
     text: "Ensure the solution meets quality standards and regulatory compliance.",
-    text1: "Rigorous QA reduces post-deployment issues by 35%, lowering maintenance costs and improving reliability.",
+    text1: "Rigorous QA reduces post-deployment issues by 35%, ensuring higher ROI by minimizing maintenance expenses and downtime.",
     date: "Step 5",
     status: "in progress",
-    imageUrl: roadmap4,
+    imageUrl: roadmap5,
   },
   {
     id: "5",
     title: "Deployment",
     text: "Custom AI Modules & AI Wrappers enhance functionality.",
-    text1: "60% increase in user engagement",
+    text1: "Tailored modules boost user engagement by 60%, ensuring greater ROI through increased adoption and efficiency.",
     date: "Step 6",
     status: "in progress",
-    imageUrl: roadmap4,
+    imageUrl: roadmap6,
   },
   {
     id: "6",
     title: "Evaluating Results",
     text: "Continuously assess outcomes and optimize for sustained value.",
-    text1: "70% improvement in decision-making speed",
+    text1: "Continuous evaluation drives a 70% improvement in decision-making speed, maximizing ROI by enabling faster",
     date: "Step 7",
     status: "in progress",
-    imageUrl: roadmap4,
+    imageUrl: roadmap7,
   }
 ];
 

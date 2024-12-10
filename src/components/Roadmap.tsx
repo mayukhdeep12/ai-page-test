@@ -107,8 +107,6 @@ import Button from "../ui/Button";
 import Heading from "../ui/Heading";
 import Tagline from "../ui/Tagline";
 
-import { check2, loading1 } from "../assets";
-
 import { useGSAP } from "@gsap/react";
 import {
   animateScrollMultipleGsap,
@@ -134,7 +132,7 @@ function Roadmap() {
 
   // Returned JSX
   return (
-    <Section className="overflow-hidden" id="roadmap">
+    <Section className="overflow-hidden" id="process">
       <div className="container md:pb-10">
         <div className="roadmap-title text-center mb-10">
           <Heading title="The Process" tag="Ready to get started" />
@@ -149,40 +147,36 @@ function Roadmap() {
             return (
               <div
                 key={item.id}
-                className={`roadmap-step flex items-center justify-between mb-10 md:mb-20 ${
-                  isEven ? "flex-row" : "flex-row-reverse"
-                }`}
+                className={`roadmap-step flex flex-col md:flex-row items-center justify-between mb-10 md:mb-20 
+                  ${isEven ? "md:flex-row" : "md:flex-row-reverse"}
+                `}
               >
-                <div className={`w-full md:w-1/2 pr-5 md:pr-10 ${isEven ? 'ml-10' : ''}`}>
+                <div
+                  className={`w-full md:w-1/2 md:pr-5 md:pr-10 
+                    ${isEven ? "md:ml-10" : ""}
+                    order-2 md:order-1
+                  `}
+                >
                   <div className="mb-4">
                     <Tagline>{item.date}</Tagline>
                   </div>
                   <h4 className="h4 mb-4">{item.title}</h4>
                   <h6 className="h6 mb-4">{item.text1}</h6>
                   <p className="body-2 text-n-4 mb-4">{item.text}</p>
-                  {/* <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
-                    <img
-                      src={isStatusDone ? check2 : loading1}
-                      className={`mr-2.5 ${!isStatusDone && "animate-[spin_2000ms_linear_infinite]"}`}
-                      width={16}
-                      height={16}
-                      alt="Status"
-                    />
-                    <div className="tagline">{item.status}</div>
-                  </div> */}
                 </div>
-                {/* <div className="w-full md:w-1/2">
+                <div className={`
+                  w-full md:w-1/2 flex justify-center 
+                  order-1 md:order-2 
+                  mb-6 md:mb-0
+                `}>
                   <img
                     src={item.imageUrl}
-                    className="w-full"
-                    width={630}
-                    height={420}
+                    className="w-full max-w-[300px] h-auto"
+                    width={300}
+                    height={300}
                     alt={item.title}
                   />
-                </div> */}
-                {/* {index !== roadmap.length - 1 && (
-                  <div className="absolute w-1 bg-n-6 h-full left-1/2 transform -translate-x-1/2"></div>
-                )} */}
+                </div>
               </div>
             );
           })}

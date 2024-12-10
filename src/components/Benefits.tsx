@@ -32,7 +32,7 @@ function Benefits() {
 
   // Returned JSX
   return (
-    <Section id="features">
+    <Section id="projects">
       <div className="container relative z-2">
         <div className="benefits-title">
           <Heading

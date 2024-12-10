@@ -40,17 +40,17 @@ function Services() {
 
   // Returned JSX
   return (
-    <Section crosses id="how-to-use">
+    <Section crosses id="solutions">
       <div className="container">
         <div className="services-title">
           <Heading
-            title="Solutions"
+            title="The Solutions"
             text=""
           />
         </div>
         <div className="relative">
           {/* Service 1 */}
-          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem] services-element">
+          {/* <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem] services-element">
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
               <img
                 src={service1}
@@ -62,9 +62,6 @@ function Services() {
             </div>
             <div className="relative z-1 max-w-[17rem] ml-auto">
               <h4 className="h4 mb-4">Services We Provide</h4>
-              {/* <p className="body-2 mb-[3rem] text-n-3">
-                Cryenx unlocks the potential of AI-powered applications
-              </p> */}
               <ul className="body-2">
                 {brainwaveServices.map((item, i) => (
                   <li
@@ -78,7 +75,7 @@ function Services() {
               </ul>
             </div>
             <Generating className="absolute inset-4 top-auto border border-n-1/10 lg:left-1/2 lg:right-auto lg:bottom-8 lg:-translate-x-1/2" />
-          </div>
+          </div> */}
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
             {/* Service 2 */}

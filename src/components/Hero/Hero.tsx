@@ -65,7 +65,7 @@ function Hero() {
             with Cryenx.
           </p>
           <div className="hero-btn">
-            <Button href="#features" white>
+            <Button href="#about" white>
               Get started
             </Button>
           </div>

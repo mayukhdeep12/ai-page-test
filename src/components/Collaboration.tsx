@@ -59,7 +59,7 @@ function Collaboration() {
 
   // Returned JSX
   return (
-    <Section crosses>
+    <Section crosses id="about">
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <div className="collaboration-title">
@@ -82,7 +82,7 @@ function Collaboration() {
             ))}
           </ul>
           <div className="button-animated inline-block">
-            <Button href="https://www.cryenx.com/">Let's Connect</Button>
+            <Button href="https://www.cryenx.com/contact">Let's Connect</Button>
           </div>
         </div>
         {/* Apps circle */}
