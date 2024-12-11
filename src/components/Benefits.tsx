@@ -15,20 +15,20 @@ import {
 
 function Benefits() {
   // GSAP animations
-  useGSAP(() => {
-    // Animation for the title
-    animateTitleScrollGsap({ target: ".benefits-title" });
+  // useGSAP(() => {
+  //   // Animation for the title
+  //   animateTitleScrollGsap({ target: ".benefits-title" });
 
-    // Animation for benefits elements
-    animateScrollMultipleGsap({
-      target: ".benefits-element",
-      animationProps: {
-        opacity: 0,
-        scale: 0.75,
-        ease: "power2.in",
-      },
-    });
-  });
+  //   // Animation for benefits elements
+  //   animateScrollMultipleGsap({
+  //     target: ".benefits-element",
+  //     animationProps: {
+  //       opacity: 0,
+  //       scale: 0.75,
+  //       ease: "power2.in",
+  //     },
+  //   });
+  // });
 
   // Returned JSX
   return (
