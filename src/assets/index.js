@@ -33,6 +33,9 @@ import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-2.svg";
 import curve2 from "./collaboration/curve-2.svg";
+import curve3 from "./roadmap/curve-3.svg";
+
+
 import discord from "./collaboration/discord.png";
 import figma from "./collaboration/figma.png";
 import framer from "./collaboration/framer.png";
@@ -130,6 +133,7 @@ lego,
   heroBackground,
   curve1,
   curve2,
+  curve3,
   discord,
   figma,
   framer,
