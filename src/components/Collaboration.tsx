@@ -68,25 +68,28 @@ function Collaboration() {
               title="About Us"
             ></Heading>
           </div>
-          <ul className="max-w-[22rem] mb-8 lg:mb-14">
-            {collabContent.map((item) => (
+          <ul className="max-w-[25rem] mb-8 lg:mb-14">
+          <p className="body-2 mt-3 text-n-4">We’re not just another AI company—we’re your partner in innovation and growth. At Cryenx Labs, we specialize in crafting cutting-edge AI solutions designed to help ambitious brands achieve measurable, ROI-driven results.
+          </p>
+          <p className="body-2 mt-3 text-n-4">Our team of AI experts, creative problem-solvers, and tech innovators builds bespoke solutions tailored to your goals, ensuring every tool we deliver drives tangible outcomes. From helping clients generate millions in revenue to cutting operational costs and creating new opportunities, we focus on what matters most: your success.
+          </p>
+          <p className="body-2 mt-3 text-n-4">What sets us apart? Our commitment to making AI work for you—enhancing human creativity, optimizing decision-making, and empowering your team with solutions that deliver. Together, we shape the future of your business in a world that’s changing faster than ever.
+
+</p>
+            {/* {collabContent.map((item) => (
               <li key={item.id} className="mb-3 py-3">
-                {/* <div className="flex items-center">
-                  <img src={check} width={24} height={24} alt="Check" />
-                  <h6 className="body-2 ml-5">{item.title}</h6>
-                </div> */}
                 {item.text && (
                   <p className="body-2 mt-3 text-n-4">{item.text}</p>
                 )}
               </li>
-            ))}
+            ))} */}
           </ul>
           <div className="button-animated inline-block">
             <Button href="https://www.cryenx.com/contact">Let's Connect</Button>
           </div>
         </div>
         {/* Apps circle */}
-        <div className="mt-16 lg:ml-auto xl:w-[38rem] lg:mt-4">
+        <div className="mt-16 lg:ml-auto xl:w-[38rem] lg:mt-32">
           {/* <p className="body-2 mb-4 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto">
             {collabText}
           </p> */}

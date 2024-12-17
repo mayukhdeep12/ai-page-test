@@ -92,8 +92,7 @@ function Services() {
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Comfy UI Workflows</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                Whether you need art for a specific theme, style, or concept, our AI art services can be tailored to meet your unique requirements. We work closely with you to understand your vision and bring it to life through AI-generated art.
-
+                Say goodbye to clunky interfaces and complicated processes. Our Comfy UI Workflows are designed to simplify how you interact with your data and tools, making every click seamless and every workflow intuitive. Built with user-first design principles, our solution ensures your team can focus on results—not figuring out the tech.
                 </p>
               </div>
               <PhotoChatMessage />
@@ -104,7 +103,8 @@ function Services() {
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">Custom AI Modules</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                We develop custom AI modules for video and audio processing. These modules can handle tasks like video editing, audio enhancement, speech recognition, and more, enhancing the quality and efficiency of multimedia content.
+                Your business is unique, and your AI should be too. Our Custom AI Modules are built from the ground up to meet your specific needs. Whether it’s streamlining workflows, improving decision-making, or unlocking new opportunities, we design AI solutions that align perfectly with your goals.
+No cookie-cutter approaches—just tailored intelligence that drives real results.
 
                 </p>
                 <ul className="flex items-center justify-between">
@@ -140,7 +140,9 @@ function Services() {
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">AI Enterprise Deployment</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                Our deployment services focus on scalability, allowing enterprises to handle increasing workloads without compromising performance. We ensure that the AI tools are optimized for your specific business needs.
+                Scaling AI solutions for enterprise success doesn’t have to be complex. Our AI Enterprise Deployment services ensure a seamless transition from concept to implementation, empowering your business to leverage AI at scale.
+We handle the heavy lifting—from integration with existing systems to ensuring compliance—so your team can focus on the big picture. The result? AI that works seamlessly across your organization, driving efficiency, innovation, and results.
+
                 </p>
                 <ul className="flex items-center justify-between">
                   {brainwaveServicesIcons.map((item, i) => (
@@ -184,7 +186,9 @@ function Services() {
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Custom LLM Chatbots</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                Our chatbots are designed to be versatile and can be customized for various industries and purposes. Whether you need a chatbot for e-commerce, healthcare, or education, we can tailor it to fit your specific needs.
+                Transform the way you engage with your audience using Custom LLM Chatbots tailored to your brand. Built on advanced large language models, our chatbots are designed to deliver personalized, human-like interactions that drive engagement, streamline support, and elevate user experiences.
+From answering complex queries to automating repetitive tasks, our chatbots integrate seamlessly with your systems and evolve with your needs, ensuring your brand stays ahead of the curve.
+
                 </p>
               </div>
               {/* <PhotoChatMessage /> */}
@@ -204,7 +208,9 @@ function Services() {
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Generative AI for Enterprises</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                Our approach is highly customizable, allowing us to develop pipelines that align perfectly with your business objectives and workflows. Whether you're in gaming, finance, or another industry, we can create tailored AI solutions to boost your operations.
+                Unlock new possibilities with Generative AI tailored for enterprise-scale challenges. Our solutions go beyond automation—delivering high-end assets like stunning visuals, compelling copy, and data-rich insights that have generated millions in value for our clients.
+From automating content creation to crafting personalized customer experiences, our Generative AI tools empower your team to work smarter, innovate faster, and drive exceptional results. Seamlessly integrated into your operations, our enterprise-grade AI amplifies creativity, efficiency, and ROI.
+
                 </p>
               </div>
               {/* <PhotoChatMessage /> */}
@@ -215,7 +221,9 @@ function Services() {
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">AI Wrappers</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                Our AI wrappers often involve integrating APIs from various AI models to build comprehensive solutions. This allows for a seamless user experience and leverages the strengths of different models.
+                Transform your existing tools into AI-powered powerhouses with our AI Wrappers. Without overhauling your systems, we add a smart layer of AI that enhances functionality, streamlines operations, and unlocks new capabilities.
+From optimizing workflows to automating repetitive tasks, AI Wrappers seamlessly integrate with your software to deliver immediate value and efficiency. It’s your current tools—supercharged with intelligence.
+
                 </p>
                 <ul className="flex items-center justify-between">
                   {brainwaveServicesIcons.map((item, i) => (

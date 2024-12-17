@@ -28,7 +28,10 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/fox.gif";
+import robot from "./hero/check.mp4";
+import project1Robot from "./hero/check1.mp4";
+import project2Robot from "./hero/check.mp4";
+import project3Robot from "./hero/check1.mp4";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-2.svg";
@@ -45,6 +48,17 @@ import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
 
+import project1Icon1 from "./collaboration/discord.png";
+import project1Icon2 from "./collaboration/figma.png";
+import project1Icon3 from "./collaboration/framer.png";
+import project2Icon1 from "./collaboration/notion.png";
+import project2Icon2 from "./collaboration/photoshop.png";
+import project2Icon3 from "./collaboration/protopie.png";
+import project3Icon1 from "./collaboration/raindrop.png";
+import project3Icon2 from "./collaboration/slack.png";
+import project3Icon3 from "./collaboration/slack.png";
+
+
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
@@ -54,8 +68,16 @@ import service from "./services/service.webp";
 import aiw from "./services/aiw.png";
 import caim from "./services/caim.webp";
 
+import highlightFirstmv from "./videos/highlight-first.mp4";
+import highlightSectmv from "./videos/hightlight-third.mp4";
+import highlightThirdmv from "./videos/hightlight-sec.mp4";
+import highlightFourthmv from "./videos/hightlight-fourth.mp4";
 
-
+import watch from "./videos/watch.svg";
+import right from "./videos/right.svg";
+import replay from "./videos/replay.svg";
+import play1 from "./videos/play.svg";
+import pause from "./videos/pause.svg";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -185,4 +207,26 @@ caim,
   instagram,
   telegram,
   twitter,
+  project1Robot,
+  project2Robot,
+  project3Robot,
+  project1Icon1,
+project1Icon2,
+project1Icon3,
+project2Icon1,
+project2Icon2,
+project2Icon3,
+project3Icon1,
+project3Icon2,
+project3Icon3,
+highlightFirstmv,
+highlightSectmv,
+highlightThirdmv,
+highlightFourthmv,
+watch,
+right,
+replay,
+play1,
+pause
 };
+

@@ -1,4 +1,5 @@
 import { benefits } from "../constants";
+import { Link } from "react-router-dom";
 
 import Section from "./Section";
 import Heading from "../ui/Heading";
@@ -7,53 +8,25 @@ import Arrow from "../assets/svg/Arrow";
 import ClipPath from "../assets/svg/ClipPath";
 import { GradientLight } from "../design/Benefits";
 
-import { useGSAP } from "@gsap/react";
-import {
-  animateTitleScrollGsap,
-  animateScrollMultipleGsap,
-} from "../utils/animations";
-
 function Benefits() {
-  // GSAP animations
-  // useGSAP(() => {
-  //   // Animation for the title
-  //   animateTitleScrollGsap({ target: ".benefits-title" });
-
-  //   // Animation for benefits elements
-  //   animateScrollMultipleGsap({
-  //     target: ".benefits-element",
-  //     animationProps: {
-  //       opacity: 0,
-  //       scale: 0.75,
-  //       ease: "power2.in",
-  //     },
-  //   });
-  // });
-
-  // Returned JSX
   return (
-    <Section id="projects">
+    <Section id="work">
       <div className="container relative z-2">
         <div className="benefits-title">
           <Heading
             className="md:max-w-md lg:max-w-2xl"
-            title="The Projects"
+            title="Featured Work"
           />
         </div>
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item, index) => {
-            let link = "";
             let linkText = "Try it out";
             let disabled = false;
 
-            if (index === 0) {
-              link = "https://batra-product-usecase.d3nc59xvwgw4bm.amplifyapp.com/";
-            } else if (index === 1) {
-              link = "https://cnvs-do-frontend.d3uj99dg1dxj4v.amplifyapp.com/";
-            } else if (index === 2) {
-              linkText = "Coming soon";
-              disabled = true;
-            }
+            // if (index === 2) {
+            //   linkText = "Coming soon";
+            //   disabled = true;
+            // }
 
             return (
               <div
@@ -72,13 +45,13 @@ function Benefits() {
                       alt={item.title}
                     />
                     <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                      <a
+                      <Link
+                        to={`/projects/${item.id}`}
                         className={`hover:text-n-3 transition-colors ${disabled ? 'cursor-not-allowed' : ''}`}
-                        href={disabled ? '#' : link}
                         onClick={(e) => disabled && e.preventDefault()}
                       >
                         {linkText}
-                      </a>
+                      </Link>
                     </p>
                     <Arrow />
                   </div>

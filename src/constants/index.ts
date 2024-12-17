@@ -2,7 +2,6 @@ import {
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
-  benefitIcon4,
   benefitImage2,
   benefitImage3,
   benefitImage4,
@@ -44,6 +43,26 @@ import {
   disney,
   sxsw,
   lego,
+  project1Robot,
+  project2Robot,
+  project3Robot,
+
+  project1Icon1,
+  project1Icon2,
+  project1Icon3,
+  project2Icon1,
+  project2Icon2,
+  project2Icon3,
+  project3Icon1,
+  project3Icon2,
+  project3Icon3,
+  highlightFirstmv,
+	highlightSectmv,
+	highlightThirdmv,
+	highlightFourthmv,
+  pause,
+  play1,
+  replay
 } from "../assets";
 
 export const navigation = [
@@ -62,21 +81,11 @@ export const navigation = [
     title: "Process",
     url: "#process",
   },
- 
- 
   {
     id: "0",
-    title: "Projects",
-    url: "#projects",
+    title: "Work",
+    url: "#work",
   },
-
- 
-  // {
-  //   id: "4",
-  //   title: "New account",
-  //   url: "#signup",
-  //   onlyMobile: true,
-  // },
   {
     id: "5",
     title: "Contact Us",
@@ -89,11 +98,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [loreal,
-  cola,
-  disney,
-  sxsw,
-  lego];
+export const companyLogos = [loreal, cola, disney, sxsw, lego];
 
 export const brainwaveServices = [
   "Comfy UI Workflows",
@@ -116,8 +121,8 @@ export const roadmap = [
   {
     id: "0",
     title: "Discovery Stage",
-    text: "Understand your challenges and define a clear direction for your solution.",
-    text1: "30% increase in project alignment with business goals, enhancing ROI by reducing misaligned efforts.",
+    text: "Our discovery process identifies key challenges, ensuring every solution is purpose-built to maximize ROI by reducing misaligned efforts.",
+    text1: "Align your goals with precision",
     date: "Step 1",
     status: "done",
     imageUrl: roadmap1,
@@ -126,8 +131,8 @@ export const roadmap = [
   {
     id: "1",
     title: "Requirement Analysis",
-    text: "Identify specific pain points and customize solutions to address them.",
-    text1: "Tailored chatbots improve customer satisfaction by 50%",
+    text: "By analyzing key pain points, we craft bespoke solutions, such as custom chatbots, proven to enhance customer satisfaction by up to 50%.",
+    text1: "Tailored for your needs",
     date: "Step 2",
     status: "done",
     imageUrl: roadmap2,
@@ -135,8 +140,8 @@ export const roadmap = [
   {
     id: "2",
     title: "Process Strategization",
-    text: "Develop a clear roadmap that ensures alignment and collaboration between teams.",
-    text1: "40% reduction in training costs, boosting ROI by accelerating employee productivity.",
+    text: "With a focused roadmap, we accelerate employee productivity, reducing training costs by 40% and driving measurable ROI.",
+    text1: "Plan smarter, execute better",
     date: "Step 3",
     status: "in progress",
     imageUrl: roadmap3,
@@ -144,8 +149,8 @@ export const roadmap = [
   {
     id: "3",
     title: "Technology Identification",
-    text: "Select the best technologies for seamless integration and scalability.",
-    text1: "Advanced AI tools enhance operational efficiency by 25%",
+    text: "We identify cutting-edge AI technologies tailored to your needs, ensuring seamless integration and scalable efficiency for long-term success.",
+    text1: "Smart solutions start here",
     date: "Step 4",
     status: "in progress",
     imageUrl: roadmap4,
@@ -153,8 +158,8 @@ export const roadmap = [
   {
     id: "4",
     title: "QA & Compliance Testing",
-    text: "Ensure the solution meets quality standards and regulatory compliance.",
-    text1: "Rigorous QA reduces post-deployment issues by 35%, ensuring higher ROI by minimizing maintenance expenses and downtime.",
+    text: "Our rigorous QA process reduces post-deployment issues by 35%, minimizing downtime and maintenance costs while meeting all compliance standards.",
+    text1: "Deliver with confidence",
     date: "Step 5",
     status: "in progress",
     imageUrl: roadmap5,
@@ -162,8 +167,8 @@ export const roadmap = [
   {
     id: "5",
     title: "Deployment",
-    text: "Custom AI Modules & AI Wrappers enhance functionality.",
-    text1: "Tailored modules boost user engagement by 60%, ensuring greater ROI through increased adoption and efficiency.",
+    text: "Tailored AI modules boost user engagement by 60%, increasing adoption and ensuring greater ROI through streamlined functionality.",
+    text1: "Deploy for impact",
     date: "Step 6",
     status: "in progress",
     imageUrl: roadmap6,
@@ -171,8 +176,8 @@ export const roadmap = [
   {
     id: "6",
     title: "Evaluating Results",
-    text: "Continuously assess outcomes and optimize for sustained value.",
-    text1: "Continuous evaluation drives a 70% improvement in decision-making speed, maximizing ROI by enabling faster",
+    text: "Our continuous evaluation drives a 70% improvement in decision-making, enabling faster, data-driven strategies for long-term success.",
+    text1: "Refine and grow",
     date: "Step 7",
     status: "in progress",
     imageUrl: roadmap7,
@@ -180,7 +185,7 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "At Cryenx Labs, we revolutionize businesses with cutting-edge AI solutions tailored for the future. From custom chatbots to seamless UI workflows, our innovative tools empower you to elevate operations and engage customers like never before. Let us help you unlock the full potential of AI and transform your vision into reality!";
+  "We’re not just another AI company—we’re your partner in innovation and growth. At Cryenx Labs, we specialize in crafting cutting-edge AI solutions designed to help ambitious brands achieve measurable, ROI-driven results.";
 
 export const collabContent = [
   {
@@ -188,14 +193,6 @@ export const collabContent = [
     title: "WE",
     text: collabText,
   },
-  // {
-  //   id: "1",
-  //   title: "Smart Automation",
-  // },
-  // {
-  //   id: "2",
-  //   title: "Top-notch Security",
-  // },
 ];
 
 export const collabApps = [
@@ -257,6 +254,78 @@ export const collabApps = [
   },
 ];
 
+export const projectCollabApps = {
+  "0": [
+    {
+      id: "0",
+      title: "Project 1 Icon 1",
+      icon: project1Icon1,
+      width: 34,
+      height: 34,
+    },
+    {
+      id: "1",
+      title: "Project 1 Icon 2",
+      icon: project1Icon2,
+      width: 34,
+      height: 34,
+    },
+    {
+      id: "2",
+      title: "Project 1 Icon 3",
+      icon: project1Icon3,
+      width: 34,
+      height: 34,
+    },
+  ],
+  "1": [
+    {
+      id: "0",
+      title: "Project 2 Icon 1",
+      icon: project2Icon1,
+      width: 34,
+      height: 34,
+    },
+    {
+      id: "1",
+      title: "Project 2 Icon 2",
+      icon: project2Icon2,
+      width: 34,
+      height: 34,
+    },
+    {
+      id: "2",
+      title: "Project 2 Icon 3",
+      icon: project2Icon3,
+      width: 34,
+      height: 34,
+    },
+  ],
+  "2": [
+    {
+      id: "0",
+      title: "Project 3 Icon 1",
+      icon: project3Icon1,
+      width: 34,
+      height: 34,
+    },
+    {
+      id: "1",
+      title: "Project 3 Icon 2",
+      icon: project3Icon2,
+      width: 34,
+      height: 34,
+    },
+    {
+      id: "2",
+      title: "Project 3 Icon 3",
+      icon: project3Icon3,
+      width: 34,
+      height: 34,
+    },
+  ],
+};
+
 export const pricing = [
   {
     id: "0",
@@ -296,54 +365,41 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Hair Diagnostic Technology",
-    text: "Our groundbreaking hair analysis AI leverages advanced computer vision and head detection algorithms to generate comprehensive hair health visualizations.",
+    title: "Project 1 Title",
+    text: "This is the detailed description for Project 1. It highlights the unique features and benefits of this project.",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
+    videoUrl: project1Robot,
+    heroTitle: "Real results. Project 1 solutions. Built for ambitious brands.",
+    heroSubtitle: "Unleash the power of AI with Cryenx. Upgrade your productivity with Cryenx for Project 1.",
+    collabApps: projectCollabApps["0"],
   },
   {
     id: "1",
-    title: "Nail Dimension Mapping",
-    text: "We've developed a cutting-edge AI vision system that revolutionizes nail diagnostics through precise marker-based measurement technologies.",
+    title: "Project 2 Title",
+    text: "This is the detailed description for Project 2. It highlights the unique features and benefits of this project.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage3,
+    videoUrl: project2Robot,
+    heroTitle: "Real results. Project 2 solutions. Built for ambitious brands.",
+    heroSubtitle: "Unleash the power of AI with Cryenx. Upgrade your productivity with Cryenx for Project 2.",
+    collabApps: projectCollabApps["1"],
     light: true,
   },
   {
     id: "2",
-    title: "AI Travel Planner",
-    text: "We architect complete AI solution ecosystems. By understanding your unique business requirements, we design and implement pre-configured workflows that leverage top-tier market solutions.",
+    title: "Project 3 Title",
+    text: "This is the detailed description for Project 3. It highlights the unique features and benefits of this project.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage4,
+    videoUrl: project3Robot,
+    heroTitle: "Real results. Project 3 solutions. Built for ambitious brands.",
+    heroSubtitle: "Unleash the power of AI with Cryenx. Upgrade your productivity with Cryenx for Project 3.",
+    collabApps: projectCollabApps["2"],
   },
-  // {
-  //   id: "3",
-  //   title: "Strategic AI Deployment",
-  //   text: "Our strategic approach focuses on deploying proven AI workflows directly within your organization. We eliminate the complexity of tool selection and implementation",
-  //   backgroundUrl: "assets/benefits/card-4.svg",
-  //   iconUrl: benefitIcon4,
-  //   imageUrl: benefitImage2,
-  //   light: true,
-  // },
-  // {
-  //   id: "4",
-  //   title: "Ask anything",
-  //   text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-  //   backgroundUrl: "assets/benefits/card-5.svg",
-  //   iconUrl: benefitIcon1,
-  //   imageUrl: benefitImage2,
-  // },
-  // {
-  //   id: "5",
-  //   title: "Improve everyday",
-  //   text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-  //   backgroundUrl: "assets/benefits/card-6.svg",
-  //   iconUrl: benefitIcon2,
-  //   imageUrl: benefitImage2,
-  // },
 ];
 
 export const socials = [
@@ -365,12 +421,6 @@ export const socials = [
     iconUrl: instagram,
     url: "https://www.instagram.com/cryenxlabs/",
   },
-  // {
-  //   id: "3",
-  //   title: "Telegram",
-  //   iconUrl: telegram,
-  //   url: "https://web.telegram.org/",
-  // },
   {
     id: "4",
     title: "Facebook",
@@ -378,3 +428,39 @@ export const socials = [
     url: "https://www.facebook.com/cryenxlabs/",
   },
 ];
+
+export const hightlightsSlides = [
+	{
+		id: 1,
+		textLists: [
+			"Enter A17 Pro.",
+			"Game‑changing chip.",
+			"Groundbreaking performance.",
+		],
+		video: highlightFirstmv,
+		videoDuration: 4,
+	},
+	{
+		id: 2,
+		textLists: ["Titanium.", "So strong. So light. So Pro."],
+		video: highlightSectmv,
+		videoDuration: 5,
+	},
+	{
+		id: 3,
+		textLists: [
+			"iPhone 15 Pro Max has the",
+			"longest optical zoom in",
+			"iPhone ever. Far out.",
+		],
+		video: highlightThirdmv,
+		videoDuration: 2,
+	},
+	{
+		id: 4,
+		textLists: ["All-new Action button.", "What will yours do?."],
+		video: highlightFourthmv,
+		videoDuration: 3.63,
+	},
+];
+

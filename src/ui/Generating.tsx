@@ -12,7 +12,7 @@ function Generating({ className }: GeneratingProps) {
         src={loading}
         alt="Loading"
       />
-      AI is generating
+      Our Magic
     </div>
   );
 }

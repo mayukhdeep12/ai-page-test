@@ -31,17 +31,7 @@ function Footer() {
         </div>
         <div className="text-center sm:text-right max-sm:text-xs">
           <p>
-            
-            <br />
             Built with ❤️ at Cryenx Labs
-            {/* <a
-              href="https://github.com/vsbron/react2024-brainwave"
-              className="text-n-2 hover:text-n-1 transition-colors"
-              target="_blank"
-            >
-              GitHub
-            </a> */}
-            <br />
           </p>
         </div>
       </footer>
