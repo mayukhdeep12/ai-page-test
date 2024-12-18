@@ -204,8 +204,13 @@ const VideoCarousel: React.FC = () => {
 
               {/* Video's Text Content */}
               <div className="absolute top-12 left-[5%] z-10">
+              {list.textListsH.map((text, i) => (
+                  <p key={i} className="text-xl md:text-3xl font-medium">
+                    {text}
+                  </p>
+                ))}
                 {list.textLists.map((text, i) => (
-                  <p key={i} className="text-xl md:text-2xl font-medium">
+                  <p key={i} className="text-xl md:text-xl font-medium mt-2">
                     {text}
                   </p>
                 ))}

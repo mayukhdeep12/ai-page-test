@@ -68,10 +68,10 @@ import service from "./services/service.webp";
 import aiw from "./services/aiw.png";
 import caim from "./services/caim.webp";
 
-import highlightFirstmv from "./videos/highlight-first.mp4";
-import highlightSectmv from "./videos/hightlight-third.mp4";
-import highlightThirdmv from "./videos/hightlight-sec.mp4";
-import highlightFourthmv from "./videos/hightlight-fourth.mp4";
+import highlightFirstmv from "./videos/v1.mp4";
+import highlightSectmv from "./videos/v2.mp4";
+import highlightThirdmv from "./videos/v3.mp4";
+import highlightFourthmv from "./videos/v4.mp4";
 
 import watch from "./videos/watch.svg";
 import right from "./videos/right.svg";

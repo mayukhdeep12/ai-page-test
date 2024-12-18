@@ -97,44 +97,9 @@ function Project1() {
           {/* Apps circle */}
           <div className="mt-16 lg:ml-auto xl:w-[38rem] lg:mt-10">
             <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
-              <MouseParallax strength={0.025} isAbsolutelyPositioned>
-                <div className="flex w-60 aspect-square border border-n-6 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 collaboration-brainwave">
-                  <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
-                    <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
-                      <img
-                        src={brainwaveSymbol}
-                        width={48}
-                        height={48}
-                        alt="Brainwave"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </MouseParallax>
+              
 
               {/* App Icons */}
-              <MouseParallax strength={0.01}>
-                <ul>
-                  {project.collabApps.map((app, i) => (
-                    <li
-                      key={app.id}
-                      className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${i * 45} collaboration-apps`}
-                    >
-                      <div
-                        className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${i * 45}`}
-                      >
-                        <img
-                          src={app.icon}
-                          className="m-auto"
-                          width={app.width}
-                          height={app.height}
-                          alt={app.title}
-                        />
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </MouseParallax>
 
               {/* <LeftCurve /> */}
               <RightCurve />

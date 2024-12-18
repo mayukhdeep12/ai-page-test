@@ -368,8 +368,8 @@ export const benefits = [
     title: "Cryenx AI Assistant",
     text: "Your versatile AI companion powered by cutting-edge technologies, ready to assist you in countless ways",
     backgroundUrl: "assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    iconUrl: benefitIcon3,
+    imageUrl: benefitImage4,
     videoUrl: project1Robot,
     heroTitle: "Simplify Your Interactions, Amplify Your Potential",
     heroSubtitle: "Your versatile AI companion powered by cutting-edge technologies, ready to assist you in countless ways",
@@ -392,14 +392,14 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Project 3 Title",
-    text: "This is the detailed description for Project 3. It highlights the unique features and benefits of this project.",
+    title: "Hair Diagnostic Technology",
+    text: "Our groundbreaking hair analysis AI leverages advanced computer vision and head detection algorithms to generate comprehensive hair health visualizations.",
     backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage4,
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
     videoUrl: project3Robot,
-    heroTitle: "Real results. Project 3 solutions. Built for ambitious brands.",
-    heroSubtitle: "Unleash the power of AI with Cryenx. Upgrade your productivity with Cryenx for Project 3.",
+    heroTitle: "Hair Diagnostic Technology",
+    heroSubtitle: "Our groundbreaking hair analysis AI leverages advanced computer vision and head detection algorithms to generate comprehensive hair health visualizations.",
     collabApps: projectCollabApps["2"],
     projectName: "project3", // Added projectName
   },
@@ -435,33 +435,41 @@ export const socials = [
 export const hightlightsSlides = [
         {
                 id: 1,
+                textListsH: [
+                  "Choose Your Expert",
+          ],
                 textLists: [
-                        "Enter A17 Pro.",
-                        "Game‑changing chip.",
-                        "Groundbreaking performance.",
+                        "Select from a range of specialized AI experts",
                 ],
                 video: highlightFirstmv,
                 videoDuration: 4,
         },
         {
                 id: 2,
-                textLists: ["Titanium.", "So strong. So light. So Pro."],
+                textListsH: [
+                  "Intelligent Context Understanding",
+          ],
+                textLists: ["upload images or videos to provide rich context"],
                 video: highlightSectmv,
                 videoDuration: 5,
         },
         {
                 id: 3,
+                textListsH: [
+                  "Collaborative Intelligence",
+          ],
                 textLists: [
-                        "iPhone 15 Pro Max has the",
-                        "longest optical zoom in",
-                        "iPhone ever. Far out.",
+                        `Ask follow-up questions, refine your requirements, \n and watch as the AI adapts in real-time`,
                 ],
                 video: highlightThirdmv,
                 videoDuration: 2,
         },
         {
                 id: 4,
-                textLists: ["All-new Action button.", "What will yours do?."],
+                textListsH: [
+                  "Customized Output",
+          ],
+                textLists: ["Generate detailed reports, create personalized \n recommendations, and easily share your AI-powered findings"],
                 video: highlightFourthmv,
                 videoDuration: 3.63,
         },

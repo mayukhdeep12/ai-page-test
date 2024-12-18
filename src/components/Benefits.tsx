@@ -20,7 +20,7 @@ function Benefits() {
         </div>
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => {
-            let linkText = "Try it out";
+            let linkText = "Know More";
             let disabled = false;
 
             return (
