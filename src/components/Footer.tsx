@@ -31,7 +31,7 @@ function Footer() {
         </div>
         <div className="text-center sm:text-right max-sm:text-xs">
           <p>
-            Built with ❤️ at Cryenx Labs
+            Built with ❤️ at Cryenx Labs.
           </p>
         </div>
       </footer>
