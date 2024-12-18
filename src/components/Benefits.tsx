@@ -19,14 +19,9 @@ function Benefits() {
           />
         </div>
         <div className="flex flex-wrap gap-10 mb-10">
-          {benefits.map((item, index) => {
+          {benefits.map((item) => {
             let linkText = "Try it out";
             let disabled = false;
-
-            // if (index === 2) {
-            //   linkText = "Coming soon";
-            //   disabled = true;
-            // }
 
             return (
               <div
@@ -46,7 +41,7 @@ function Benefits() {
                     />
                     <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
                       <Link
-                        to={`/projects/${item.id}`}
+                        to={`/projects/${item.projectName}`}
                         className={`hover:text-n-3 transition-colors ${disabled ? 'cursor-not-allowed' : ''}`}
                         onClick={(e) => disabled && e.preventDefault()}
                       >

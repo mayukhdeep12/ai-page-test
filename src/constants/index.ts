@@ -57,9 +57,9 @@ import {
   project3Icon2,
   project3Icon3,
   highlightFirstmv,
-	highlightSectmv,
-	highlightThirdmv,
-	highlightFourthmv,
+        highlightSectmv,
+        highlightThirdmv,
+        highlightFourthmv,
   pause,
   play1,
   replay
@@ -365,7 +365,7 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Cryenx AI Assitant",
+    title: "Cryenx AI Assistant",
     text: "Your versatile AI companion powered by cutting-edge technologies, ready to assist you in countless ways",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
@@ -374,19 +374,21 @@ export const benefits = [
     heroTitle: "Simplify Your Interactions, Amplify Your Potential",
     heroSubtitle: "Your versatile AI companion powered by cutting-edge technologies, ready to assist you in countless ways",
     collabApps: projectCollabApps["0"],
+    projectName: "project1", // Added projectName
   },
   {
     id: "1",
-    title: "AI Avatar Assitant",
-    text: "This is the detailed description for Project 2. It highlights the unique features and benefits of this project.",
+    title: "AI Avatar Assistant",
+    text: "Discover Cryenx AI: Your intelligent digital companion, ready to assist across tasks with cutting-edge technology, personalized support, and innovative solutions at your fingertips.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage3,
     videoUrl: project2Robot,
-    heroTitle: "Real results. Project 2 solutions. Built for ambitious brands.",
-    heroSubtitle: "Unleash the power of AI with Cryenx. Upgrade your productivity with Cryenx for Project 2.",
+    heroTitle: "Your Intelligent Digital Companion.",
+    heroSubtitle: "Empowering Your Potential with Smart, Adaptive Assistance Across Every Dimension of Work and Life",
     collabApps: projectCollabApps["1"],
     light: true,
+    projectName: "project2", // Added projectName
   },
   {
     id: "2",
@@ -399,6 +401,7 @@ export const benefits = [
     heroTitle: "Real results. Project 3 solutions. Built for ambitious brands.",
     heroSubtitle: "Unleash the power of AI with Cryenx. Upgrade your productivity with Cryenx for Project 3.",
     collabApps: projectCollabApps["2"],
+    projectName: "project3", // Added projectName
   },
 ];
 
@@ -430,37 +433,36 @@ export const socials = [
 ];
 
 export const hightlightsSlides = [
-	{
-		id: 1,
-		textLists: [
-			"Enter A17 Pro.",
-			"Game‑changing chip.",
-			"Groundbreaking performance.",
-		],
-		video: highlightFirstmv,
-		videoDuration: 4,
-	},
-	{
-		id: 2,
-		textLists: ["Titanium.", "So strong. So light. So Pro."],
-		video: highlightSectmv,
-		videoDuration: 5,
-	},
-	{
-		id: 3,
-		textLists: [
-			"iPhone 15 Pro Max has the",
-			"longest optical zoom in",
-			"iPhone ever. Far out.",
-		],
-		video: highlightThirdmv,
-		videoDuration: 2,
-	},
-	{
-		id: 4,
-		textLists: ["All-new Action button.", "What will yours do?."],
-		video: highlightFourthmv,
-		videoDuration: 3.63,
-	},
+        {
+                id: 1,
+                textLists: [
+                        "Enter A17 Pro.",
+                        "Game‑changing chip.",
+                        "Groundbreaking performance.",
+                ],
+                video: highlightFirstmv,
+                videoDuration: 4,
+        },
+        {
+                id: 2,
+                textLists: ["Titanium.", "So strong. So light. So Pro."],
+                video: highlightSectmv,
+                videoDuration: 5,
+        },
+        {
+                id: 3,
+                textLists: [
+                        "iPhone 15 Pro Max has the",
+                        "longest optical zoom in",
+                        "iPhone ever. Far out.",
+                ],
+                video: highlightThirdmv,
+                videoDuration: 2,
+        },
+        {
+                id: 4,
+                textLists: ["All-new Action button.", "What will yours do?."],
+                video: highlightFourthmv,
+                videoDuration: 3.63,
+        },
 ];
-

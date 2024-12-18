@@ -29,8 +29,8 @@ import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/check.mp4";
-import project1Robot from "./hero/check1.mp4";
-import project2Robot from "./hero/check.mp4";
+import project1Robot from "./projects/p1.mp4";
+import project2Robot from "./projects/p2.mp4";
 import project3Robot from "./hero/check1.mp4";
 import heroBackground from "./hero/hero-background.jpg";
 
