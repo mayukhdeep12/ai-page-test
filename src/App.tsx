@@ -12,6 +12,7 @@ import ProjectDetail from "./components/ProjectDetail";
 
 
 
+
 import ButtonGradient from "./assets/svg/ButtonGradient";
 
 function App() {

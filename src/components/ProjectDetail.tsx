@@ -5,7 +5,6 @@ import Header from "./Header";
 import Hero from "./Hero/Hero"; // Importing the Hero component
 import VideoCarousel from "./VideoCarousel";
 
-
 import Section from "./Section";
 import Heading from "../ui/Heading";
 
@@ -21,6 +20,12 @@ import {
   animateTitleScrollGsap,
   animateScrollMultipleGsap,
 } from "../utils/animations";
+
+// Function to decode Base64 URL
+function decodeBase64Url(encodedUrl: string): string {
+  const decodedData = atob(encodedUrl);
+  return decodedData;
+}
 
 function ProjectDetail() {
   const { id } = useParams();
@@ -66,6 +71,10 @@ function ProjectDetail() {
       },
     });
   });
+
+  // Base64 encoded URL
+  const encodedUrl = "aHR0cHM6Ly9jcnllbngtYm90Lm5ldGxpZnkuYXBwLw==";
+  const decodedUrl = decodeBase64Url(encodedUrl);
 
   // Returned JSX
   return (
@@ -204,7 +213,23 @@ function ProjectDetail() {
         </Section>
       )}
       <VideoCarousel />
-
+      <iframe
+        src={decodedUrl}
+        width="100%"
+        height="800px"
+        style={{
+          minHeight: '800px',
+          maxHeight: '1000px',
+          width: '100%',
+          height: 'auto',
+          border: 'none',
+          overflow: 'hidden'
+        }}
+        frameBorder="0"
+        scrolling="no"
+        allowFullScreen
+        title="Responsive Iframe"
+      ></iframe>
       <Footer />
     </>
   );
