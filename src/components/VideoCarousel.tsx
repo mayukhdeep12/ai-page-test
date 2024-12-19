@@ -3,12 +3,15 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-import { hightlightsSlides } from "../constants";
 import { replay, pause, play1 } from "../assets";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const VideoCarousel: React.FC = () => {
+interface VideoCarouselProps {
+  projectVideos: typeof hightlightsSlides;
+}
+
+const VideoCarousel: React.FC<VideoCarouselProps> = ({ projectVideos }) => {
   const videoRef = useRef<(HTMLVideoElement | null)[]>([]);
   const [video, setVideo] = useState({
     videoId: 0,
@@ -26,7 +29,7 @@ const VideoCarousel: React.FC = () => {
   };
 
   const handleVideoEnd = (i: number) => {
-    if (i !== 3) {
+    if (i !== projectVideos.length - 1) {
       handleProcess("video-end", i);
       if (isPlaying) {
         const nextVideo = videoRef.current[i + 1];
@@ -40,7 +43,7 @@ const VideoCarousel: React.FC = () => {
   };
 
   useEffect(() => {
-    if (loadedData.length > 3) {
+    if (loadedData.length > 0) {
       if (!isPlaying) {
         videoRef.current.forEach(video => {
           if (video) {
@@ -92,11 +95,21 @@ const VideoCarousel: React.FC = () => {
           isLastVideo: false,
           isPlaying: true 
         }));
+        if (videoRef.current[0]) {
+          videoRef.current[0].play();
+        }
         break;
 
       case "play":
       case "pause":
         setVideo((pre) => ({ ...pre, isPlaying: !pre.isPlaying }));
+        if (videoRef.current[videoId]) {
+          if (pre.isPlaying) {
+            videoRef.current[videoId].pause();
+          } else {
+            videoRef.current[videoId].play();
+          }
+        }
         break;
 
       case "video-end":
@@ -106,6 +119,9 @@ const VideoCarousel: React.FC = () => {
           videoId: i! + 1,
           isPlaying: true 
         }));
+        if (videoRef.current[i! + 1]) {
+          videoRef.current[i! + 1].play();
+        }
         break;
 
       case "video-last":
@@ -117,24 +133,10 @@ const VideoCarousel: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    if (isIOS) {
-      videoRef.current.forEach(video => {
-        if (video) {
-          video.muted = false;
-          video.play().catch(error => {
-            console.error("Autoplay failed:", error);
-          });
-        }
-      });
-    }
-  }, [loadedData]);
-
   return (
     <>
       <div className="mt-12 flex items-center text-white px-4 sm:px-10 md:px-20 lg:px-32 overflow-x-hidden overflow-y-hidden">
-        {hightlightsSlides.map((list, i) => (
+        {projectVideos.map((list, i) => (
           <div key={list.id} id="slider" className="sm:pr-20 pr-10">
             <div className="video__carousel__container relative">
               <div className="w-full h-full aspect-[16/9] sm:aspect-[2/1] md:aspect-[3/1] flex__center rounded-3xl overflow-hidden bg-black">
@@ -193,11 +195,11 @@ const VideoCarousel: React.FC = () => {
         <button 
           className="ml-4 p-4 border border-gray-100 rounded-full backdrop-blur flex__center"
           aria-label={isLastVideo ? "Replay videos" : isPlaying ? "Pause" : "Play"}
+          onClick={isLastVideo ? () => handleProcess("video-reset") : () => handleProcess("play")}
         >
           <img
             src={isLastVideo ? replay : !isPlaying ? play1 : pause}
             alt={isLastVideo ? "replay" : !isPlaying ? "play" : "pause"}
-            onClick={isLastVideo ? () => handleProcess("video-reset") : () => handleProcess("play")}
           />
         </button>
       </div>

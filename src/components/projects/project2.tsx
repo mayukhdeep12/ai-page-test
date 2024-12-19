@@ -20,6 +20,7 @@ import {
   animateTitleScrollGsap,
   animateScrollMultipleGsap,
 } from "../../utils/animations";
+import { hightlightsSlidesProject2 } from "../../constants";
 
 function Project2() {
   useEffect(() => {
@@ -111,7 +112,7 @@ function Project2() {
       <div className="container mx-auto text-center mt-24 mb-12">
         <h2 className="text-4xl font-bold text-white">How Cryenx Assistant works</h2>
       </div>
-      <VideoCarousel />
+      <VideoCarousel projectVideos={hightlightsSlidesProject2} />
       <Footer />
     </>
   );

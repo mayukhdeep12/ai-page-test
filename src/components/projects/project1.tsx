@@ -17,6 +17,7 @@ import {
 } from "../../utils/animations";
 import Button from "../../ui/Button";
 import { cryenx } from "../../assets";
+import { hightlightsSlidesProject1 } from "../../constants";
 
 function Project1() {
   useEffect(() => {
@@ -107,7 +108,7 @@ function Project1() {
       <div className="container mx-auto text-center mt-24 mb-12">
         <h2 className="text-4xl font-bold text-white">How Cryenx Assistant works</h2>
       </div>
-      <VideoCarousel />
+      <VideoCarousel projectVideos={hightlightsSlidesProject1} />
       <div className="container mx-auto text-center mt-36">
         <div className="bg-n-7 text-white px-6 py-3 rounded-full inline-block">
           Try out our demo

@@ -60,6 +60,10 @@ import {
         highlightSectmv,
         highlightThirdmv,
         highlightFourthmv,
+        highlightFirstmvProject2,
+        highlightSectmvProject2,
+        highlightThirdmvProject2,
+        highlightFourthmvProject2,
   pause,
   play1,
   replay
@@ -432,7 +436,7 @@ export const socials = [
   },
 ];
 
-export const hightlightsSlides = [
+export const hightlightsSlidesProject1 = [
         {
                 id: 1,
                 textListsH: [
@@ -471,6 +475,49 @@ export const hightlightsSlides = [
           ],
                 textLists: ["Each agent serves a unique purpose, offering targeted solutions for specific requirements. "],
                 video: highlightFourthmv,
+                videoDuration: 3.63,
+        },
+];
+
+export const hightlightsSlidesProject2 = [
+        {
+                id: 1,
+                textListsH: [
+                  "Introduction to Project 2",
+          ],
+                textLists: [
+                        "Welcome to Project 2! This project focuses on a different set of features and functionalities.",
+                ],
+                video: highlightFirstmvProject2,
+                videoDuration: 4,
+        },
+        {
+                id: 2,
+                textListsH: [
+                  "Key Features",
+          ],
+                textLists: ["Explore the key features of Project 2 which include advanced analytics and personalized support."],
+                video: highlightSectmvProject2,
+                videoDuration: 5,
+        },
+        {
+                id: 3,
+                textListsH: [
+                  "User Experience",
+          ],
+                textLists: [
+                        "Experience the seamless user interface designed specifically for Project 2, enhancing usability and efficiency.",
+                ],
+                video: highlightThirdmvProject2,
+                videoDuration: 2,
+        },
+        {
+                id: 4,
+                textListsH: [
+                  "Integration Capabilities",
+          ],
+                textLists: ["Project 2 integrates with various platforms to provide a comprehensive solution for your needs."],
+                video: highlightFourthmvProject2,
                 videoDuration: 3.63,
         },
 ];

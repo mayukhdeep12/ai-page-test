@@ -73,6 +73,12 @@ import highlightSectmv from "./videos/v2.mp4";
 import highlightThirdmv from "./videos/v3.mp4";
 import highlightFourthmv from "./videos/v4.mp4";
 
+import highlightFirstmvProject2 from "./videos/v1.mp4";
+import highlightSectmvProject2 from "./videos/v2.mp4";
+import highlightThirdmvProject2 from "./videos/v3.mp4";
+import highlightFourthmvProject2 from "./videos/v4.mp4";
+
+
 import watch from "./videos/watch.svg";
 import right from "./videos/right.svg";
 import replay from "./videos/replay.svg";
@@ -225,6 +231,10 @@ highlightFirstmv,
 highlightSectmv,
 highlightThirdmv,
 highlightFourthmv,
+highlightFirstmvProject2,
+highlightSectmvProject2,
+highlightThirdmvProject2,
+highlightFourthmvProject2,
 watch,
 right,
 replay,
