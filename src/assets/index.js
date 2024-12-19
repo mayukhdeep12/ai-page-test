@@ -77,6 +77,8 @@ import watch from "./videos/watch.svg";
 import right from "./videos/right.svg";
 import replay from "./videos/replay.svg";
 import play1 from "./videos/play.svg";
+import muteIcon from "./videos/replay.svg";
+import unmuteIcon from "./videos/play.svg";
 import pause from "./videos/pause.svg";
 
 import lines from "./pricing/lines.svg";
@@ -227,6 +229,8 @@ watch,
 right,
 replay,
 play1,
-pause
+pause,
+muteIcon,
+unmuteIcon
 };
 

@@ -77,7 +77,7 @@ function Project1() {
   return (
     <>
       <Header />
-      <Hero project={project} /> {/* Adding the Hero component with project prop */}
+      <Hero project={project} />
       <Section crosses id="about">
         <div className="container lg:flex">
           <div className="max-w-[25rem]">

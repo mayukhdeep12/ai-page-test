@@ -436,10 +436,10 @@ export const hightlightsSlides = [
         {
                 id: 1,
                 textListsH: [
-                  "Choose Your Expert",
+                  "Introduction to Cryenx Assitant",
           ],
                 textLists: [
-                        "Select from a range of specialized AI experts",
+                        "Greetings! I’m here to help you navigate the process of sending your message to cryenx AI.",
                 ],
                 video: highlightFirstmv,
                 videoDuration: 4,
@@ -447,19 +447,19 @@ export const hightlightsSlides = [
         {
                 id: 2,
                 textListsH: [
-                  "Intelligent Context Understanding",
+                  "Composing Message",
           ],
-                textLists: ["upload images or videos to provide rich context"],
+                textLists: ["You have two ways to create your message: select a pre-written greeting from the available options or type your own custom message in the text input field."],
                 video: highlightSectmv,
                 videoDuration: 5,
         },
         {
                 id: 3,
                 textListsH: [
-                  "Collaborative Intelligence",
+                  "The Agents",
           ],
                 textLists: [
-                        `Ask follow-up questions, refine your requirements, \n and watch as the AI adapts in real-time`,
+                        "We’re thrilled to introduce three specialized agents, each designed to cater to unique needs:","1. Travel Planner Agent","2. Medical Appointment Agent","3. Real Estate Agent",
                 ],
                 video: highlightThirdmv,
                 videoDuration: 2,
@@ -467,9 +467,9 @@ export const hightlightsSlides = [
         {
                 id: 4,
                 textListsH: [
-                  "Customized Output",
+                  "Capabilitis Of Agents",
           ],
-                textLists: ["Generate detailed reports, create personalized \n recommendations, and easily share your AI-powered findings"],
+                textLists: ["Each agent serves a unique purpose, offering targeted solutions for specific requirements. "],
                 video: highlightFourthmv,
                 videoDuration: 3.63,
         },

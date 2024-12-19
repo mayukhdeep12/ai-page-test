@@ -142,7 +142,7 @@ function Project2() {
           </div>
         </div>
       </Section>
-      <VideoCarousel />
+      {/* <VideoCarousel /> */}
       <Footer />
     </>
   );
