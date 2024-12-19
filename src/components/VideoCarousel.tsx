@@ -117,6 +117,20 @@ const VideoCarousel: React.FC = () => {
     }
   };
 
+  useEffect(() => {
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (isIOS) {
+      videoRef.current.forEach(video => {
+        if (video) {
+          video.muted = false;
+          video.play().catch(error => {
+            console.error("Autoplay failed:", error);
+          });
+        }
+      });
+    }
+  }, [loadedData]);
+
   return (
     <>
       <div className="mt-12 flex items-center text-white px-4 sm:px-10 md:px-20 lg:px-32 overflow-x-hidden overflow-y-hidden">
