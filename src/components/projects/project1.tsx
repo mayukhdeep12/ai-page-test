@@ -1,17 +1,12 @@
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import Footer from "../Footer";
-import Header from "../Header";
-import Hero from "../Hero/Hero"; // Importing the Hero component
+import Hero from "../Hero/Hero";
 import VideoCarousel from "../VideoCarousel";
-
 import Section from "../Section";
 import Heading from "../../ui/Heading";
-
 import { MouseParallax } from "react-just-parallax";
-
 import { collabApps, collabContent, collabText } from "../../constants";
-import { benefits } from "../../constants/index"; // Import benefits array
-
+import { benefits } from "../../constants/index";
 import { brainwaveSymbol, check } from "../../assets";
 import { LeftCurve, RightCurve } from "../../design/Collaboration";
 import { useGSAP } from "@gsap/react";
@@ -20,15 +15,15 @@ import {
   animateTitleScrollGsap,
   animateScrollMultipleGsap,
 } from "../../utils/animations";
+import Button from "../../ui/Button";
+import { cryenx } from "../../assets";
 
 function Project1() {
   useEffect(() => {
-    // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
   }, []);
 
   useGSAP(() => {
-    // Animation for the title
     animateTitleScrollGsap({
       target: ".collaboration-title",
       animationProps: {
@@ -36,7 +31,6 @@ function Project1() {
       },
     });
 
-    // Animation for CTA button
     animateScrollGsap({
       target: ".button-animated",
       animationProps: {
@@ -46,7 +40,6 @@ function Project1() {
       },
     });
 
-    // Animation for app logos
     animateScrollMultipleGsap({
       target: ".collaboration-apps",
       animationProps: {
@@ -56,7 +49,6 @@ function Project1() {
       },
     });
 
-    // Animation for Brainwave logo
     animateScrollGsap({
       target: ".collaboration-brainwave",
       animationProps: {
@@ -76,7 +68,17 @@ function Project1() {
 
   return (
     <>
-      <Header />
+      <header className="fixed top-0 l-0 w-full z-50 border-b border-n-6 bg-n-8/90 backdrop-blur-sm">
+        <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 py-4">
+          <a className="block w-[12rem] xl:mr-8" href="https://www.cryenx.com/">
+            <img src={cryenx} width={190} height={40} alt="Cryenx Labs" />
+          </a>
+          <Button href="https://www.cryenx.com/contact">
+            Contact us
+          </Button>
+        </div>
+      </header>
+
       <Hero project={project} />
       <Section crosses id="about">
         <div className="container lg:flex">
@@ -94,14 +96,8 @@ function Project1() {
               <a href="#" className="button">Learn More</a>
             </div>
           </div>
-          {/* Apps circle */}
           <div className="mt-16 lg:ml-auto xl:w-[38rem] lg:mt-10">
             <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
-              
-
-              {/* App Icons */}
-
-              {/* <LeftCurve /> */}
               <RightCurve />
             </div>
           </div>

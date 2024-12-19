@@ -11,7 +11,6 @@ import Generating from "../../ui/Generating.js";
 import { curve, heroBackground, robot } from "../../assets/index.js";
 import { BackgroundCircles, BottomLine, Gradient } from "../../design/Hero.js";
 
-// Define the type for the project prop
 interface Project {
   id: string;
   title: string;
@@ -37,18 +36,13 @@ interface HeroProps {
 
 function Hero({ project }: HeroProps) {
   useGSAP(() => {
-    // Animation for main title
     gsap.from(".hero-title", { opacity: 0, y: 50, duration: 0.75, delay: 0.2 });
-
-    // Animation for subtitle
     gsap.from(".hero-subtitle", {
       opacity: 0,
       y: 50,
       duration: 0.75,
       delay: 0.5,
     });
-
-    // Animation for main button
     gsap.from(".hero-btn", {
       opacity: 0,
       scale: 2,
@@ -58,24 +52,16 @@ function Hero({ project }: HeroProps) {
     });
   });
 
-  // Determine the video source based on the project
   const videoSrc = project?.videoUrl || robot;
-
-  // Default hero title and subtitle
   const defaultHeroTitle = "Real results. Smart AI solutions. Built for ambitious brands.";
   const defaultHeroSubtitle = "Unleash the power of AI with Cryenx. Upgrade your productivity with Cryenx.";
-
-  // Use project-specific title and subtitle if available
   const heroTitle = project?.heroTitle || defaultHeroTitle;
   const heroSubtitle = project?.heroSubtitle || defaultHeroSubtitle;
-
-  // Determine if the current page is a project detail page
   const isProjectPage = !!project;
 
-  // Returned JSX
   return (
     <Section
-      className="pt-[4rem] md:pt-[5rem] lg:pt-[7rem] -mt-[4.75rem] md:-mt-[5.25rem]"
+      className="pt-[4rem] md:pt-[5rem] lg:pt-[7rem] -mt-[4.75rem] md:-mt-[5.25rem] overflow-hidden"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
