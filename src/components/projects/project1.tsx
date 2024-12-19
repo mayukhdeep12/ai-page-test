@@ -10,6 +10,7 @@ import { benefits } from "../../constants/index";
 import { brainwaveSymbol, check } from "../../assets";
 import { LeftCurve, RightCurve } from "../../design/Collaboration";
 import { useGSAP } from "@gsap/react";
+import { smallSphere, stars } from "../../assets/index.js";
 import {
   animateScrollGsap,
   animateTitleScrollGsap,
@@ -59,9 +60,19 @@ function Project1() {
         delay: 0.5,
       },
     });
+
+    animateScrollGsap({
+      target: ".planets-element",
+      animationProps: {
+        opacity: 0,
+        y: 100,
+        ease: "power1.inOut",
+        duration: 0.75,
+      },
+    });
   });
 
-  const project = benefits.find(benefit => benefit.projectName === "project1");
+  const project = benefits.find(benefit => benefit.projectName === "cryenx-assistant");
 
   if (!project) {
     return <div>Project not found</div>;
@@ -93,14 +104,37 @@ function Project1() {
             <ul className="max-w-[25rem] mb-8 lg:mb-14">
               <p className="body-2 mt-3 text-n-4">{project.text}</p>
             </ul>
-            <div className="button-animated inline-block">
+            {/* <div className="button-animated inline-block">
               <a href="#" className="button">Learn More</a>
-            </div>
+            </div> */}
           </div>
           <div className="mt-16 lg:ml-auto xl:w-[38rem] lg:mt-10">
-            <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
+            {/* <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
               <RightCurve />
-            </div>
+            </div> */}
+            <div className="hidden relative justify-center mb-[6.5rem] lg:flex planets-element">
+          <MouseParallax strength={0.015}>
+            <img
+              src={smallSphere}
+              className="relative z-1 mx-auto"
+              width={255}
+              height={255}
+              alt="Sphere"
+            />
+          </MouseParallax>
+
+          <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+            <MouseParallax strength={0.06}>
+              <img
+                src={stars}
+                className="w-full"
+                width={950}
+                height={400}
+                alt="Start"
+              />
+            </MouseParallax>
+          </div>
+        </div>
           </div>
         </div>
       </Section>
@@ -117,7 +151,7 @@ function Project1() {
       <iframe
         src="https://cryenx-bot.netlify.app/"
         style={{
-          minHeight: '800px',
+          minHeight: '900px',
           maxHeight: '1000px',
           width: '100%',
           height: 'auto',

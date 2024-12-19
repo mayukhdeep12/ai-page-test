@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Footer from "../Footer";
-import Header from "../Header";
 import Hero from "../Hero/Hero"; // Importing the Hero component
 import VideoCarousel from "../VideoCarousel";
 
@@ -20,6 +19,8 @@ import {
   animateTitleScrollGsap,
   animateScrollMultipleGsap,
 } from "../../utils/animations";
+import Button from "../../ui/Button";
+import { cryenx } from "../../assets";
 import { hightlightsSlidesProject2 } from "../../constants";
 
 function Project2() {
@@ -77,7 +78,16 @@ function Project2() {
 
   return (
     <>
-      <Header />
+     <header className="fixed top-0 l-0 w-full z-50 border-b border-n-6 bg-n-8/90 backdrop-blur-sm">
+        <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 py-4">
+          <a className="block w-[12rem] xl:mr-8" href="https://www.cryenx.com/">
+            <img src={cryenx} width={190} height={40} alt="Cryenx Labs" />
+          </a>
+          <Button href="https://www.cryenx.com/contact">
+            Contact us
+          </Button>
+        </div>
+      </header>
       <Hero project={project} />
       <Section crosses id="about">
         <div className="container lg:flex">
@@ -91,9 +101,9 @@ function Project2() {
             <ul className="max-w-[25rem] mb-8 lg:mb-14">
               <p className="body-2 mt-3 text-n-4">{project.text}</p>
             </ul>
-            <div className="button-animated inline-block">
+            {/* <div className="button-animated inline-block">
               <a href="#" className="button">Learn More</a>
-            </div>
+            </div> */}
           </div>
           {/* Apps circle */}
           <div className="mt-16 lg:ml-auto xl:w-[38rem] lg:mt-10">
@@ -110,9 +120,14 @@ function Project2() {
       </Section>
      
       <div className="container mx-auto text-center mt-24 mb-12">
-        <h2 className="text-4xl font-bold text-white">How Cryenx Assistant works</h2>
+        <h2 className="text-4xl font-bold text-white">How AI Video Generator works</h2>
       </div>
       <VideoCarousel projectVideos={hightlightsSlidesProject2} />
+      <div className="container mx-auto text-center mt-36 mb-36">
+        <div className="bg-n-7 text-white px-6 py-3 rounded-full inline-block">
+          Demo Coming Soon
+        </div>
+      </div>
       <Footer />
     </>
   );

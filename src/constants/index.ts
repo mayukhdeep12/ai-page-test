@@ -378,7 +378,7 @@ export const benefits = [
     heroTitle: "Simplify Your Interactions, Amplify Your Potential",
     heroSubtitle: "Your versatile AI companion powered by cutting-edge technologies, ready to assist you in countless ways",
     collabApps: projectCollabApps["0"],
-    projectName: "project1", // Added projectName
+    projectName: "cryenx-assistant", // Added projectName
   },
   {
     id: "1",
@@ -483,7 +483,7 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 1,
                 textListsH: [
-                  "Introduction to Project 2",
+                  "Generate avatar",
           ],
                 textLists: [
                         "Welcome to Project 2! This project focuses on a different set of features and functionalities.",
@@ -494,7 +494,7 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 2,
                 textListsH: [
-                  "Key Features",
+                  "Animate the avatar",
           ],
                 textLists: ["Explore the key features of Project 2 which include advanced analytics and personalized support."],
                 video: highlightSectmvProject2,
@@ -503,7 +503,7 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 3,
                 textListsH: [
-                  "User Experience",
+                  "Select language and voice",
           ],
                 textLists: [
                         "Experience the seamless user interface designed specifically for Project 2, enhancing usability and efficiency.",
@@ -514,7 +514,7 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 4,
                 textListsH: [
-                  "Integration Capabilities",
+                  "Add your video script",
           ],
                 textLists: ["Project 2 integrates with various platforms to provide a comprehensive solution for your needs."],
                 video: highlightFourthmvProject2,
