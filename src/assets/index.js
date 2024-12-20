@@ -68,15 +68,15 @@ import service from "./services/service.webp";
 import aiw from "./services/aiw.png";
 import caim from "./services/caim.webp";
 
-import highlightFirstmv from "./videos/v1.mp4";
-import highlightSectmv from "./videos/v2.mp4";
-import highlightThirdmv from "./videos/v3.mp4";
-import highlightFourthmv from "./videos/v4.mp4";
+import highlightFirstmv from "../../public/videos/v1.mp4";
+import highlightSectmv from "../../public/videos/v2.mp4";
+import highlightThirdmv from "../../public/videos/v3.mp4";
+import highlightFourthmv from "../../public/videos/v4.mp4";
 
-import highlightFirstmvProject2 from "./videos/v1.mp4";
-import highlightSectmvProject2 from "./videos/v2.mp4";
-import highlightThirdmvProject2 from "./videos/v3.mp4";
-import highlightFourthmvProject2 from "./videos/v4.mp4";
+import highlightFirstmvProject2 from "../../public/videos/v1.mp4";
+import highlightSectmvProject2 from "../../public/videos/v1.mp4";
+import highlightThirdmvProject2 from "../../public/videos/v1.mp4";
+import highlightFourthmvProject2 from "../../public/videos/v1.mp4";
 
 
 import watch from "./videos/watch.svg";
@@ -121,7 +121,7 @@ import benefitIcon2 from "./benefits/icon-2.png";
 import benefitIcon3 from "./benefits/icon-1.png";
 import benefitIcon4 from "./benefits/icon-4.svg";
 import benefitImage2 from "./benefits/hair.png";
-import benefitImage3 from "./benefits/nail.png";
+import benefitImage3 from "./benefits/avatar.png";
 import benefitImage4 from "./benefits/map.png";
 
 

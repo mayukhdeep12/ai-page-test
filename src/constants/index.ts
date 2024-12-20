@@ -392,7 +392,7 @@ export const benefits = [
     heroSubtitle: "Empowering Your Potential with Smart, Adaptive Assistance Across Every Dimension of Work and Life",
     collabApps: projectCollabApps["1"],
     light: true,
-    projectName: "project2", // Added projectName
+    projectName: "photos-animator", // Added projectName
   },
   {
     id: "2",
@@ -483,10 +483,10 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 1,
                 textListsH: [
-                  "Generate avatar",
+                  "Generate Stunning Portraits",
           ],
                 textLists: [
-                        "Welcome to Project 2! This project focuses on a different set of features and functionalities.",
+                        "Craft your personalized avatar with customizable features and styles.",
                 ],
                 video: highlightFirstmvProject2,
                 videoDuration: 4,
@@ -494,19 +494,19 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 2,
                 textListsH: [
-                  "Animate the avatar",
+                  "Bring Your Avatar to Life",
           ],
-                textLists: ["Explore the key features of Project 2 which include advanced analytics and personalized support."],
+                textLists: ["Transform your static image into a dynamic video with our animation technology."],
                 video: highlightSectmvProject2,
                 videoDuration: 5,
         },
         {
                 id: 3,
                 textListsH: [
-                  "Select language and voice",
+                  "Choose Your Preferred Language and Voice",
           ],
                 textLists: [
-                        "Experience the seamless user interface designed specifically for Project 2, enhancing usability and efficiency.",
+                        "Select from various languages and voice profiles for your avatar's speech.",
                 ],
                 video: highlightThirdmvProject2,
                 videoDuration: 2,
@@ -514,9 +514,9 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 4,
                 textListsH: [
-                  "Add your video script",
+                  "Craft Your Message",
           ],
-                textLists: ["Project 2 integrates with various platforms to provide a comprehensive solution for your needs."],
+                textLists: ["Enter the script for your avatar to deliver in a seamless video presentation."],
                 video: highlightFourthmvProject2,
                 videoDuration: 3.63,
         },

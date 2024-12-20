@@ -70,7 +70,7 @@ function Project2() {
     });
   });
 
-  const project = benefits.find(benefit => benefit.projectName === "project2");
+  const project = benefits.find(benefit => benefit.projectName === "photos-animator");
 
   if (!project) {
     return <div>Project not found</div>;
