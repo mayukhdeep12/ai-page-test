@@ -123,7 +123,7 @@ function Project1() {
             />
           </MouseParallax>
 
-          <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 w-[40rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
             <MouseParallax strength={0.06}>
               <img
                 src={stars}

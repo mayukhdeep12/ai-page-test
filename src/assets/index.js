@@ -69,9 +69,9 @@ import aiw from "./services/aiw.png";
 import caim from "./services/caim.webp";
 
 import highlightFirstmv from "/assets/videos/v1.mp4";
-import highlightSectmv from "/assets/videos/v2.mp4";
-import highlightThirdmv from "/assets/videos/v3.mp4";
-import highlightFourthmv from "/assets/videos/v4.mp4";
+import highlightSectmv from "/assets/videos/v1.mp4";
+import highlightThirdmv from "/assets/videos/v1.mp4";
+import highlightFourthmv from "/assets/videos/v1.mp4";
 
 import highlightFirstmvProject2 from "/assets/videos/v1.mp4";
 import highlightSectmvProject2 from "/assets/videos/v1.mp4";
