@@ -31,15 +31,17 @@ declare global {
   }
 }
 
+const script = document.createElement('script');
+script.type = 'module';
+script.src = 'https://gradio.s3-us-west-2.amazonaws.com/4.37.2/gradio.js';
+document.body.appendChild(script);
+
 function Project2() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
     // Add Gradio script dynamically
-    const script = document.createElement('script');
-    script.type = 'module';
-    script.src = 'https://gradio.s3-us-west-2.amazonaws.com/4.37.2/gradio.js';
-    document.body.appendChild(script);
+   
 
     // Cleanup
     return () => {
@@ -168,7 +170,7 @@ function Project2() {
         </div>
       </div>
       <div className="container mx-auto mt-12 mb-24">
-        <gradio-app src="https://kwaivgi-liveportrait.hf.space" className="w-full"></gradio-app>
+      <gradio-app src="https://han-123-liveportrait.hf.space"></gradio-app>
       </div>
       <Footer />
     </>
