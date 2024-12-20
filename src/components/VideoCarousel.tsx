@@ -202,16 +202,31 @@ const VideoCarousel: React.FC<VideoCarouselProps> = ({ projectVideos }) => {
             />
           ))}
         </div>
-        <button 
-          className="ml-4 p-4 border border-gray-100 rounded-full backdrop-blur flex__center"
-          aria-label={isLastVideo ? "Replay videos" : isPlaying ? "Pause" : "Play"}
-          onClick={isLastVideo ? () => handleProcess("video-reset") : () => handleProcess("play")}
-        >
-          <img
-            src={isLastVideo ? replay : !isPlaying ? play1 : pause}
-            alt={isLastVideo ? "replay" : !isPlaying ? "play" : "pause"}
-          />
-        </button>
+        <button className="ml-4 p-4 bg-gray-300 rounded-full  backdrop-blur flex__center ">
+					<img
+						src={
+							isLastVideo
+								? replay
+								: !isPlaying
+								? play1
+								: pause
+						}
+						alt={
+							isLastVideo
+								? "replay"
+								: !isPlaying
+								? "play"
+								: "pause"
+						}
+						onClick={
+							isLastVideo
+								? () => handleProcess("video-reset")
+								: !isPlaying
+								? () => handleProcess("play")
+								: () => handleProcess("pause")
+						}
+					/>
+				</button>
       </div>
     </>
   );
