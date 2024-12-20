@@ -143,22 +143,28 @@ const VideoCarousel: React.FC<VideoCarouselProps> = ({ projectVideos }) => {
           <div key={list.id} id="slider" className="sm:pr-20 pr-10">
             <div className="video__carousel__container relative">
               <div className="w-full h-full aspect-[16/9] sm:aspect-[2/1] md:aspect-[3/1] flex__center rounded-3xl overflow-hidden bg-black">
-                <video
-                  id="video"
-                  muted
-                  playsInline
-                  preload="auto"
-                  className="w-full h-full object-cover"
-                  ref={(el) => (videoRef.current[i] = el)}
-                  onPlay={() =>
-                    setVideo((pre) => ({
-                      ...pre,
-                      isPlaying: true,
-                    }))
-                  }
-                  onEnded={() => handleVideoEnd(i)}
-                  onLoadedMetadata={(e) => handleLoadedMetadata(i, e)}
-                >
+              <video
+									className="pointer-events-none"
+									id="video"
+									muted
+									playsInline
+									preload="auto"
+									ref={(el) => (videoRef.current[i] = el)}
+									onPlay={() =>
+										setVideo((pre) => ({
+											...pre,
+											isPlaying: true,
+										}))
+									}
+									onEnded={() => {
+										i !== 3
+											? handleProcess("video-end", i)
+											: handleProcess("video-last");
+									}}
+									onLoadedMetadata={(e) =>
+										handleLoadedMetadata(i, e)
+									}
+								>
                   <source src={list.video} type="video/mp4" />
                 </video>
               </div>
