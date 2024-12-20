@@ -202,7 +202,7 @@ const VideoCarousel: React.FC<VideoCarouselProps> = ({ projectVideos }) => {
             />
           ))}
         </div>
-        <button className="ml-4 p-4 bg-gray-300 rounded-full  backdrop-blur flex__center ">
+        <button className="ml-4 p-4 border border-gray-300 rounded-full  backdrop-blur flex__center ">
 					<img
 						src={
 							isLastVideo
