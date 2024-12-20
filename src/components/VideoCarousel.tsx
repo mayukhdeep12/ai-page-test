@@ -4,11 +4,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 import { replay, pause, play1 } from "../assets";
+import { hightlightsSlidesProject1 } from "../constants";
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface VideoCarouselProps {
-  projectVideos: typeof hightlightsSlides;
+  projectVideos: typeof hightlightsSlidesProject1;
 }
 
 const VideoCarousel: React.FC<VideoCarouselProps> = ({ projectVideos }) => {
@@ -22,7 +23,8 @@ const VideoCarousel: React.FC<VideoCarouselProps> = ({ projectVideos }) => {
   });
 
   const { videoId, isPlaying, isLastVideo } = video;
-  const [loadedData, setLoadedData] = useState([]);
+  // Define proper type for loadedData state
+  const [loadedData, setLoadedData] = useState<React.SyntheticEvent<HTMLVideoElement, Event>[]>([]);
 
   const handleLoadedMetadata = (i: number, e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
     setLoadedData((pre) => [...pre, e]);
@@ -104,10 +106,10 @@ const VideoCarousel: React.FC<VideoCarouselProps> = ({ projectVideos }) => {
       case "pause":
         setVideo((pre) => ({ ...pre, isPlaying: !pre.isPlaying }));
         if (videoRef.current[videoId]) {
-          if (pre.isPlaying) {
-            videoRef.current[videoId].pause();
+          if (video.isPlaying) {
+            videoRef.current[videoId]?.pause();
           } else {
-            videoRef.current[videoId].play();
+            videoRef.current[videoId]?.play();
           }
         }
         break;
@@ -119,8 +121,9 @@ const VideoCarousel: React.FC<VideoCarouselProps> = ({ projectVideos }) => {
           videoId: i! + 1,
           isPlaying: true 
         }));
-        if (videoRef.current[i! + 1]) {
-          videoRef.current[i! + 1].play();
+        const nextVideo = videoRef.current[i! + 1];
+        if (nextVideo) {
+          nextVideo.play();
         }
         break;
 
@@ -142,6 +145,7 @@ const VideoCarousel: React.FC<VideoCarouselProps> = ({ projectVideos }) => {
               <div className="w-full h-full aspect-[16/9] sm:aspect-[2/1] md:aspect-[3/1] flex__center rounded-3xl overflow-hidden bg-black">
                 <video
                   id="video"
+                  muted
                   playsInline
                   preload="auto"
                   className="w-full h-full object-cover"
