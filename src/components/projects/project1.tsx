@@ -19,6 +19,8 @@ import {
 import Button from "../../ui/Button";
 import { cryenx } from "../../assets";
 import { hightlightsSlidesProject1 } from "../../constants";
+import Benefits from '../Benefits';
+import Pricing from '../Pricing';
 
 function Project1() {
   useEffect(() => {
@@ -95,7 +97,7 @@ function Project1() {
       <Section crosses id="about">
         <div className="container lg:flex">
           <div className="max-w-[25rem]">
-            <div className="collaboration-title">
+            <div className="">
               <Heading
                 className="h2 mb-4 md:mb-8 md:!text-left"
                 title={project.title}
@@ -112,7 +114,7 @@ function Project1() {
             {/* <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
               <RightCurve />
             </div> */}
-            <div className="hidden relative justify-center mb-[6.5rem] lg:flex planets-element">
+            <div className="hidden relative justify-center mb-[6.5rem] lg:flex ">
           <MouseParallax strength={0.015}>
             <img
               src={smallSphere}
@@ -163,6 +165,8 @@ function Project1() {
         allowFullScreen
         title="Responsive Iframe"
       ></iframe>
+              <Benefits />
+              <Pricing />
       <Footer />
     </>
   );

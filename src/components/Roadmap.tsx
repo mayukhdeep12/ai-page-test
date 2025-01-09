@@ -133,7 +133,7 @@ function Roadmap() {
   return (     
     <Section className="overflow-hidden" id="process">       
       <div className="container md:pb-10">         
-        <div className="roadmap-title text-center mb-10">           
+        <div className=" text-center mb-10">           
           <Heading title="The Process" tag="Ready to get started" />         
         </div>         
         <div className="relative">           
@@ -149,7 +149,7 @@ function Roadmap() {
             return (               
               <div                 
                 key={item.id}                
-                className={`roadmap-step flex flex-col md:flex-row items-center justify-between mb-10 md:mb-20                    
+                className={` flex flex-col md:flex-row items-center justify-between mb-10 md:mb-20                    
                   ${isEven ? "md:flex-row" : "md:flex-row-reverse"}                 
                 `}               
               >                 

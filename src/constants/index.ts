@@ -121,6 +121,64 @@ export const brainwaveServicesIcons = [
   sliders04,
 ];
 
+export const roadmap_sol = [
+  {
+    id: "0",
+    title: "Comfy UI Workflows",
+    text: "Say goodbye to clunky interfaces and complicated processes. Our Comfy UI Workflows are designed to simplify how you interact with your data and tools, making every click seamless and every workflow intuitive. Built with user-first design principles, our solution ensures your team can focus on results—not figuring out the tech.",
+    text1: "Align your goals with precision",
+    date: "Step 1",
+    status: "done",
+    imageUrl: "/roadmap/s1.png",
+    colorful: true,
+  },
+  {
+    id: "1",
+    title: "Custom AI Modules",
+    text: "Your business is unique, and your AI should be too. Our Custom AI Modules are built from the ground up to meet your specific needs. Whether it’s streamlining workflows, improving decision-making, or unlocking new opportunities, we design AI solutions that align perfectly with your goals. No cookie-cutter approaches—just tailored intelligence that drives real results.",
+    text1: "Tailored for your needs",
+    date: "Step 2",
+    status: "done",
+    imageUrl: "/roadmap/s2.png",
+  },
+  {
+    id: "2",
+    title: "AI Enterprise Deployment",
+    text: "Scaling AI solutions for enterprise success doesn’t have to be complex. Our AI Enterprise Deployment services ensure a seamless transition from concept to implementation, empowering your business to leverage AI at scale. We handle the heavy lifting—from integration with existing systems to ensuring compliance—so your team can focus on the big picture. The result? AI that works seamlessly across your organization, driving efficiency, innovation, and results.",
+    text1: "Plan smarter, execute better",
+    date: "Step 3",
+    status: "in progress",
+    imageUrl: "/roadmap/s3.png",
+  },
+  {
+    id: "3",
+    title: "Custom LLM Chatbots",
+    text: "Transform the way you engage with your audience using Custom LLM Chatbots tailored to your brand. Built on advanced large language models, our chatbots are designed to deliver personalized, human-like interactions that drive engagement, streamline support, and elevate user experiences. From answering complex queries to automating repetitive tasks, our chatbots integrate seamlessly with your systems and evolve with your needs, ensuring your brand stays ahead of the curve.",
+    text1: "Smart solutions start here",
+    date: "Step 4",
+    status: "in progress",
+    imageUrl: "/roadmap/s4.png",
+  },
+  {
+    id: "4",
+    title: "Generative AI for Enterprises",
+    text: "Unlock new possibilities with Generative AI tailored for enterprise-scale challenges. Our solutions go beyond automation—delivering high-end assets like stunning visuals, compelling copy, and data-rich insights that have generated millions in value for our clients. From automating content creation to crafting personalized customer experiences, our Generative AI tools empower your team to work smarter, innovate faster, and drive exceptional results. Seamlessly integrated into your operations, our enterprise-grade AI amplifies creativity, efficiency, and ROI.",
+    text1: "Deliver with confidence",
+    date: "Step 5",
+    status: "in progress",
+    imageUrl: "/roadmap/s5.png",
+  },
+  {
+    id: "5",
+    title: "AI Wrappers",
+    text: "Transform your existing tools into AI-powered powerhouses with our AI Wrappers. Without overhauling your systems, we add a smart layer of AI that enhances functionality, streamlines operations, and unlocks new capabilities. From optimizing workflows to automating repetitive tasks, AI Wrappers seamlessly integrate with your software to deliver immediate value and efficiency. It’s your current tools—supercharged with intelligence.",
+    text1: "Deploy for impact",
+    date: "Step 6",
+    status: "in progress",
+    imageUrl: "/roadmap/s6.png",
+  }
+];
+
 export const roadmap = [
   {
     id: "0",
@@ -186,6 +244,72 @@ export const roadmap = [
     status: "in progress",
     imageUrl: roadmap7,
   }
+];
+
+export const testimonials = [
+  {
+     id: 1,
+     text: "Its user-friendly interface and robust features support our diverse needs.",
+     src: "/avatar-9.png",
+     name: "Casey Harper",
+     username: "@casey09",
+  },
+  {
+     id: 2,
+     text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
+     src: "/avatar-1.png",
+     name: "Jamie Rivera",
+     username: "@jamietechguru00",
+  },
+  {
+     id: 3,
+     text: "Our team's productivity has skyrocketed since we started using this tool. ",
+     src: "/avatar-2.png",
+     name: "Josh Smith",
+     username: "@jjsmith",
+  },
+  {
+     id: 4,
+     text: "This app has completely transformed how I manage my projects and deadlines.",
+     src: "/avatar-3.png",
+     name: "Morgan Lee",
+     username: "@morganleewhiz",
+  },
+  {
+     id: 5,
+     text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
+     src: "/avatar-4.png",
+     name: "Casey Jordan",
+     username: "@caseyj",
+  },
+  {
+     id: 6,
+     text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
+     src: "/avatar-5.png",
+     name: "Taylor Kim",
+     username: "@taylorkimm",
+  },
+  {
+     id: 7,
+     text: "The customizability and integration capabilities of this app are top-notch.",
+     src: "/avatar-6.png",
+     name: "Riley Smith",
+     username: "@rileysmith1",
+  },
+  {
+     id: 8,
+     text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
+     src: "/avatar-7.png",
+     name: "Jordan Patels",
+     username: "@jpatelsdesign",
+  },
+  {
+     id: 9,
+     text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
+     src: "/avatar-8.png",
+     name: "Sam Dawson",
+     username: "@dawsontechtips",
+  },
 ];
 
 export const collabText =
@@ -440,10 +564,10 @@ export const hightlightsSlidesProject1 = [
         {
                 id: 1,
                 textListsH: [
-                  "Introduction to Cryenx Assitant",
+                  "",
           ],
                 textLists: [
-                        "Greetings! I’m here to help you navigate the process of sending your message to cryenx AI.",
+                        "",
                 ],
                 video: highlightFirstmv,
                 videoDuration: 4,
@@ -451,19 +575,19 @@ export const hightlightsSlidesProject1 = [
         {
                 id: 2,
                 textListsH: [
-                  "Composing Message",
+                  "",
           ],
-                textLists: ["You have two ways to create your message: select a pre-written greeting from the available options or type your own custom message in the text input field."],
+                textLists: [""],
                 video: highlightSectmv,
                 videoDuration: 5,
         },
         {
                 id: 3,
                 textListsH: [
-                  "The Agents",
+                  "",
           ],
                 textLists: [
-                        "We’re thrilled to introduce three specialized agents, each designed to cater to unique needs:","1. Travel Planner Agent","2. Medical Appointment Agent","3. Real Estate Agent",
+                        "",
                 ],
                 video: highlightThirdmv,
                 videoDuration: 2,
@@ -471,9 +595,9 @@ export const hightlightsSlidesProject1 = [
         {
                 id: 4,
                 textListsH: [
-                  "Capabilitis Of Agents",
+                  "",
           ],
-                textLists: ["Each agent serves a unique purpose, offering targeted solutions for specific requirements. "],
+                textLists: [""],
                 video: highlightFourthmv,
                 videoDuration: 3.63,
         },
@@ -483,10 +607,10 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 1,
                 textListsH: [
-                  "Generate Stunning Portraits",
+                  "",
           ],
                 textLists: [
-                        "Craft your personalized avatar with customizable features and styles.",
+                        "",
                 ],
                 video: highlightFirstmvProject2,
                 videoDuration: 4,
@@ -494,19 +618,19 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 2,
                 textListsH: [
-                  "Bring Your Avatar to Life",
+                  "",
           ],
-                textLists: ["Transform your static image into a dynamic video with our animation technology."],
+                textLists: [""],
                 video: highlightSectmvProject2,
                 videoDuration: 5,
         },
         {
                 id: 3,
                 textListsH: [
-                  "Choose Your Preferred Language and Voice",
+                  "",
           ],
                 textLists: [
-                        "Select from various languages and voice profiles for your avatar's speech.",
+                        "",
                 ],
                 video: highlightThirdmvProject2,
                 videoDuration: 2,
@@ -514,9 +638,9 @@ export const hightlightsSlidesProject2 = [
         {
                 id: 4,
                 textListsH: [
-                  "Craft Your Message",
+                  "",
           ],
-                textLists: ["Enter the script for your avatar to deliver in a seamless video presentation."],
+                textLists: [""],
                 video: highlightFourthmvProject2,
                 videoDuration: 3.63,
         },

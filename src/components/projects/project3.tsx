@@ -20,6 +20,8 @@ import {
   animateTitleScrollGsap,
   animateScrollMultipleGsap,
 } from "../../utils/animations";
+import Benefits from '../Benefits';
+import Pricing from '../Pricing';
 
 function Project3() {
   useEffect(() => {
@@ -142,7 +144,9 @@ function Project3() {
           </div>
         </div>
       </Section>
-      <VideoCarousel />
+      {/* <VideoCarousel /> */}
+      <Benefits />
+      <Pricing />
       <Footer />
     </>
   );

@@ -29,6 +29,7 @@ function App() {
                 <Services />
                 <Roadmap />
                 <Benefits />
+                <Pricing />
               </div>
               <Footer />
             </>

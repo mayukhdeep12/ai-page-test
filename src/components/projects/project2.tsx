@@ -19,6 +19,8 @@ import {
 import Button from "../../ui/Button";
 import { cryenx } from "../../assets";
 import { hightlightsSlidesProject1 } from "../../constants";
+import Benefits from '../Benefits';
+import Pricing from '../Pricing';
 
 // Declare the custom element for TypeScript
 declare global {
@@ -119,7 +121,7 @@ function Project2() {
       <Section crosses id="about">
         <div className="container lg:flex">
           <div className="max-w-[25rem]">
-            <div className="collaboration-title">
+            <div className="">
               <Heading
                 className="h2 mb-4 md:mb-8 md:!text-left"
                 title={project.title}
@@ -130,7 +132,7 @@ function Project2() {
             </ul>
           </div>
           <div className="mt-16 lg:ml-auto xl:w-[38rem] lg:mt-10">
-            <div className="hidden relative justify-center mb-[6.5rem] lg:flex planets-element">
+            <div className="hidden relative justify-center mb-[6.5rem] lg:flex ">
               <MouseParallax strength={0.015}>
                 <img
                   src={smallSphere}
@@ -164,14 +166,16 @@ function Project2() {
       
      
 
-      <div className="container mx-auto text-center mt-36">
+      {/* <div className="container mx-auto text-center mt-36">
         <div className="bg-n-7 text-white px-6 py-3 rounded-full inline-block">
           Try out our demo
         </div>
-      </div>
-      <div className="container mx-auto mt-12 mb-24">
+      </div> */}
+      {/* <div className="container mx-auto mt-12 mb-24">
       <gradio-app src="https://han-123-liveportrait.hf.space"></gradio-app>
-      </div>
+      </div> */}
+      <Benefits />
+      <Pricing />
       <Footer />
     </>
   );
